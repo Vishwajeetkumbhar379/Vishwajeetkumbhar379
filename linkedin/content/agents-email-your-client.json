@@ -1,0 +1,94 @@
+{
+  "slug": "agents-email-your-client",
+  "topic": "Would you let an always-on AI agent email your client?",
+  "slides": [
+    {
+      "kind": "cover", "tint": "purple", "badge": "AI agents x Client work",
+      "title": "Let an AI email your *client*?",
+      "sub": "OpenAI's Dots just launched. Claude and Grok are in the same race. Here's the rule I'd use."
+    },
+    {
+      "kind": "stake", "tint": "coral", "badge": "This week",
+      "title": "OpenAI just shipped always-on agents",
+      "body": "Dots work between your chats. Each gets its own cloud computer and plugs into 4,000+ apps like Slack. Work comes back for you to review.",
+      "source": "Source: OpenAI DevDay launch, Sept 29 2026, as reported by TechCrunch and 9to5Google."
+    },
+    {
+      "kind": "point", "tint": "teal", "badge": "Why you should care",
+      "title": "Clients judge your response time",
+      "body": "Nobody sees your tools. They see how fast you answer, and whether the answer comes with a reason.",
+      "demo": [
+        {"k": "Client, Mon 9:02am", "v": "Why did CPA jump?"},
+        {"k": "Agent, Mon 6:00am", "v": "Already flagged it"}
+      ],
+      "fix_label": "The new bar",
+      "fix": "An agent that has the answer before the question lands."
+    },
+    {
+      "kind": "stack", "tint": "purple", "badge": "Same promise, different bets",
+      "title": "Three agents, three bets",
+      "items": ["Dots: always on, works between chats", "Claude Code: you stay in the loop", "Grok Build: parallel agents, early beta"],
+      "body": "Early reviews split on benchmarks. Pick by how much control you want, not by a leaderboard."
+    },
+    {
+      "kind": "point", "tint": "coral", "badge": "The line",
+      "title": "Agents draft. Humans send.",
+      "body": "My rule from building these: anything that leaves the building gets a human's eyes first. Clients remember the one bad email.",
+      "fix_label": "In one line",
+      "fix": "Let the agent do the work. Keep the send button."
+    },
+    {
+      "kind": "point", "tint": "teal", "badge": "The bad-news test",
+      "title": "Would you phone them about it?",
+      "body": "If you'd phone the client, don't let an agent write it. If you'd send the same note to 40 clients, automate it.",
+      "fix_label": "Rule of thumb",
+      "fix": "Bad news, pricing, apologies: you. Reports, reminders, status updates: agent drafts."
+    },
+    {
+      "kind": "point", "tint": "purple", "badge": "Not just theory",
+      "title": "My Monday report builds itself",
+      "body": "campaign-report-autopilot assembles the client report every Monday on GitHub Actions, with scale, keep, test and cut calls. A human still approves what leaves.",
+      "source": "Open source: github.com/Vishwajeetkumbhar379/campaign-report-autopilot"
+    },
+    {
+      "kind": "recap", "tint": "teal", "badge": "Save this recap",
+      "title": "What I'd hand over",
+      "rows": [
+        {"k": "Alone", "v": "Pull data, spot spikes"},
+        {"k": "Draft only", "v": "Reports, check-in emails"},
+        {"k": "You only", "v": "Bad news, pricing, renewals"}
+      ],
+      "source": "Your line may sit somewhere else. That's the interesting part."
+    },
+    {
+      "kind": "cta", "tint": "coral", "badge": "Your turn",
+      "title": "Where's your line?",
+      "sub": "Would you let an agent email a client? Say yes, no, or drafts only.",
+      "button": "Comment your answer"
+    }
+  ],
+  "caption": [
+    "OpenAI just shipped Dots: agents that work between your chats.",
+    "Claude and Grok are in the same race.",
+    "",
+    "Every one of them promises \"it does it for you.\"",
+    "",
+    "Here's my filter for client work:",
+    "→ Reports, reminders, status: agent drafts",
+    "→ Spikes and anomalies: agent flags",
+    "→ Bad news, pricing, renewals: you",
+    "→ Anything that leaves the building: a human reads it first",
+    "",
+    "The bad-news test:",
+    "If you'd phone the client, don't let an agent write it.",
+    "If you'd send the same note to 40 clients, automate it.",
+    "",
+    "I'd rather be the account manager who had the answer at 6am than the one who heard about it at 9:02.",
+    "",
+    "Source: TechCrunch and 9to5Google, Sept 29 2026.",
+    "",
+    "🔖 Save this before your next agent decision.",
+    "",
+    "Would you let an agent email your client: yes, no, or drafts only?"
+  ]
+}

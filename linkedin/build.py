@@ -163,6 +163,8 @@ def render_slide(i, total, s, cfg):
         inner += [badge(s.get("badge")), f'<h2>{esc(s["title"])}</h2>', f'<div class="rows">{rows}</div>']
         if s.get("body"):
             inner += ['<div class="spacer"></div>', f'<p class="body">{esc(s["body"])}</p>']
+        if s.get("source"):
+            inner += [f'<p class="source">{esc(s["source"])}</p>']
     elif kind == "recap":
         rows = "".join(f'<div class="row two"><div class="k">{esc(r["k"])}</div><div class="v">{esc(r["v"])}</div></div>'
                        for r in s["rows"])

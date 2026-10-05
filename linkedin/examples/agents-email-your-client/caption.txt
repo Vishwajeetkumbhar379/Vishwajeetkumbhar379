@@ -1,0 +1,22 @@
+OpenAI just shipped Dots: agents that work between your chats.
+Claude and Grok are in the same race.
+
+Every one of them promises "it does it for you."
+
+Here's my filter for client work:
+→ Reports, reminders, status: agent drafts
+→ Spikes and anomalies: agent flags
+→ Bad news, pricing, renewals: you
+→ Anything that leaves the building: a human reads it first
+
+The bad-news test:
+If you'd phone the client, don't let an agent write it.
+If you'd send the same note to 40 clients, automate it.
+
+I'd rather be the account manager who had the answer at 6am than the one who heard about it at 9:02.
+
+Source: TechCrunch and 9to5Google, Sept 29 2026.
+
+🔖 Save this before your next agent decision.
+
+Would you let an agent email your client: yes, no, or drafts only?
