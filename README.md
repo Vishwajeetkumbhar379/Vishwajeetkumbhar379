@@ -1,8 +1,19 @@
+<a href="https://vishkumbhar.netlify.app"><img src="assets/banner.svg" alt="Vish Kumbhar: digital marketer who builds his own AI tools. 850+ creators, 20+ brands, 12 people led, 11 open-source AI tools." width="100%"></a>
+
+<p>
+<a href="https://vishkumbhar.netlify.app"><img src="https://img.shields.io/badge/Portfolio-vishkumbhar.netlify.app-0E4B48?style=for-the-badge" alt="Portfolio"></a>
+<a href="https://vishkumbhar.netlify.app/Vishwajeet_Kumbhar_CV.pdf"><img src="https://img.shields.io/badge/CV-PDF-D99A1E?style=for-the-badge" alt="CV"></a>
+<a href="https://www.linkedin.com/in/vishwajeetkumbhar379"><img src="https://img.shields.io/badge/LinkedIn-8.8k_followers-0A66C2?style=for-the-badge&logo=linkedin" alt="LinkedIn"></a>
+<a href="mailto:vishwajeetkumbhar379@gmail.com"><img src="https://img.shields.io/badge/Email-Say_hi-142220?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
+</p>
+
 ### Hi, I'm Vish 👋
 
 **Digital marketer who builds his own AI tools.** Growth, performance, partnerships and client management, with AI underneath.
 
 Five years across creator partnerships, paid and organic social, client leadership and campaign reporting, for brands like HUL (Unilever), Philips, L'Oréal and Tata. 850+ creator deals, a 12-person team, 20+ brand accounts. Now based in Germany (MBA, Hochschule Offenburg), I build the tools I wish I'd had: each one turns a slow, error-prone part of marketing into minutes.
+
+> **Start here:** [Growth Experiment Lab](https://github.com/Vishwajeetkumbhar379/growth-experiment-lab) (A/B tests read properly) · [Job Search Agent](https://github.com/Vishwajeetkumbhar379/job-search-agent) (the agent running my own job search) · [Client Health Score](https://github.com/Vishwajeetkumbhar379/client-health-score) (churn risk before it happens)
 
 #### Growth & analytics
 
@@ -46,4 +57,4 @@ Five years across creator partnerships, paid and organic social, client leadersh
 
 [Portfolio](https://vishkumbhar.netlify.app) · [CV (PDF)](https://vishkumbhar.netlify.app/Vishwajeet_Kumbhar_CV.pdf) · [LinkedIn](https://www.linkedin.com/in/vishwajeetkumbhar379) · vishwajeetkumbhar379@gmail.com
 
-<sub>Open to growth, performance, digital marketing, partnerships and account management roles · remote first, Berlin welcome</sub>
+<sub>Open to growth, performance, digital marketing, partnerships and account management roles · remote first, Berlin welcome · Python, Claude API, MCP, GitHub Actions</sub>
