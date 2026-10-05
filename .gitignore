@@ -1,0 +1,10 @@
+# Secrets: never commit these (this repo is public)
+.env
+.env.*
+*.pem
+*.key
+secrets*
+# Local build output (finished examples live in linkedin/examples/)
+linkedin/out/
+__pycache__/
+*.pyc
