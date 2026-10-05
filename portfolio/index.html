@@ -1,0 +1,1221 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vish Kumbhar · Digital Marketing, Growth &amp; AI</title>
+<meta name="description" content="Vishwajeet (Vish) Kumbhar: digital marketer with 5+ years in creator partnerships, growth, performance and client leadership, who builds his own AI tools. Remote-first, based in Germany.">
+<meta name="author" content="Vishwajeet Kumbhar">
+<link rel="canonical" href="https://vishkumbhar.netlify.app/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://vishkumbhar.netlify.app/">
+<meta property="og:title" content="Vish Kumbhar · Digital Marketing, Growth & AI">
+<meta property="og:description" content="Growth, performance, partnerships and client management, plus 12 open-source AI tools for marketers.">
+<meta property="og:image" content="https://vishkumbhar.netlify.app/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0E4B48">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230E4B48'/%3E%3Ctext x='32' y='42' font-family='Arial Black,Arial' font-weight='900' font-size='26' fill='%23ECE7DC' text-anchor='middle'%3EVK%3C/text%3E%3Ccircle cx='50' cy='44' r='4' fill='%23D99A1E'/%3E%3C/svg%3E">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: split hero (bone text / deep-teal deal field), proof strip, then a ledger grid with a sticky label rail left and content right; contact closes on ink */
+:root {
+  --bone: #ECE7DC;
+  --paper: #F5F2EA;
+  --ink: #142220;
+  --muted: #56645F;
+  --line: #CFC8B8;
+  --teal: #0E4B48;
+  --teal-ink: #E9E4D7;
+  --signal: #D99A1E;
+  --signal-ink: #8A5F06;
+  --good: #2F7A55;
+  --f-display: "Syne", "Arial Black", system-ui, sans-serif;
+  --f-body: "Public Sans", "Helvetica Neue", Arial, sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --s-1: .8125rem; --s0: 1rem; --s1: 1.1875rem; --s2: 1.5rem; --s3: 2.25rem; --s4: clamp(2.5rem, 6vw, 4.75rem);
+  --gutter: clamp(16px, 4vw, 48px);
+  --max: 1180px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bone: #101918; --paper: #16211F; --ink: #E8E3D7; --muted: #9AA7A2; --line: #2A3936;
+    --teal: #0C3B39; --teal-ink: #E9E4D7; --signal: #E8B03F; --signal-ink: #F0C266; --good: #5DBA8A;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bone: #101918; --paper: #16211F; --ink: #E8E3D7; --muted: #9AA7A2; --line: #2A3936;
+  --teal: #0C3B39; --teal-ink: #E9E4D7; --signal: #E8B03F; --signal-ink: #F0C266; --good: #5DBA8A;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { background: var(--bone); color: var(--ink); font-family: var(--f-body); font-size: var(--s0); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+a { color: inherit; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--signal); outline-offset: 3px; border-radius: 4px; }
+.wrap { max-width: var(--max); margin: 0 auto; padding-inline: var(--gutter); }
+.eyebrow { font-family: var(--f-mono); font-size: var(--s-1); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 0; }
+
+/* nav */
+.nav { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 10; background: color-mix(in srgb, var(--bone) 88%, transparent); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+.nav .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 12px; }
+.mark { font-family: var(--f-display); font-weight: 800; font-size: 1.05rem; text-decoration: none; letter-spacing: -.01em; }
+.mark span { color: var(--signal-ink); }
+.nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: clamp(12px, 2.4vw, 28px); font-size: var(--s-1); }
+.nav ul a { text-decoration: none; color: var(--muted); font-weight: 500; }
+.nav ul a:hover { color: var(--ink); }
+@media (max-width: 620px) { .nav ul li.hide-s { display: none; } }
+
+/* hero */
+.hero { display: grid; grid-template-columns: 1.15fr 1fr; }
+.hero-text { padding-block: clamp(40px, 7vw, 88px); padding-inline: var(--gutter) clamp(16px, 4vw, 56px); display: flex; flex-direction: column; gap: 22px; justify-content: center; min-width: 0; }
+.hero-text > * { max-width: 620px; margin-left: auto; width: 100%; }
+.eyebrow b { color: var(--good); font-weight: 500; }
+h1 { font-family: var(--f-display); font-weight: 800; font-size: var(--s4); line-height: .98; letter-spacing: -.035em; margin: 0; text-wrap: balance; }
+h1 em { font-style: normal; color: var(--signal-ink); }
+.who { font-family: var(--f-display); font-weight: 700; font-size: var(--s1); margin: 0; letter-spacing: -.01em; }
+.who span { color: var(--muted); font-weight: 600; }
+.lede { font-size: var(--s1); line-height: 1.55; margin: 0; max-width: 34em; }
+.facts { display: flex; flex-wrap: wrap; gap: 8px 10px; padding: 0; margin: 0; list-style: none; }
+.facts li { font-size: var(--s-1); border: 1px solid var(--line); border-radius: 999px; padding: 4px 12px; background: var(--paper); }
+.ctas { display: flex; flex-wrap: wrap; gap: 10px; }
+.btn { display: inline-flex; align-items: center; gap: 8px; font: 600 var(--s-1)/1 var(--f-body); padding: 12px 18px; border-radius: 8px; text-decoration: none; border: 1px solid var(--ink); cursor: pointer; background: transparent; color: var(--ink); transition: transform .15s; }
+.btn.primary { background: var(--ink); color: var(--bone); }
+.btn:hover { transform: translateY(-1px); }
+@media (prefers-reduced-motion: reduce) { .btn { transition: none; } .btn:hover { transform: none; } }
+.field { background: var(--teal); color: var(--teal-ink); min-height: 440px; display: flex; flex-direction: column; min-width: 0; }
+.field canvas { flex: 1; width: 100%; display: block; }
+.field figcaption { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; padding: 16px clamp(16px, 3vw, 32px) 20px; border-top: 1px solid color-mix(in srgb, var(--teal-ink) 18%, transparent); }
+.field .big { font-family: var(--f-display); font-weight: 800; font-size: var(--s3); line-height: 1; letter-spacing: -.03em; }
+.field .big em { font-style: normal; color: var(--signal); }
+.field .cap { font-family: var(--f-mono); font-size: var(--s-1); opacity: .8; }
+@media (max-width: 860px) { .hero { grid-template-columns: 1fr; } .hero-text > * { margin-left: 0; } .field { min-height: 300px; } }
+
+/* proof strip */
+.proof { background: var(--ink); color: var(--bone); }
+.proof ul { list-style: none; margin: 0; padding-block: 22px; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 16px 24px; }
+.proof li { display: grid; gap: 4px; min-width: 0; }
+.proof strong { font-family: var(--f-display); font-weight: 800; font-size: clamp(1.6rem, 3.2vw, 2.25rem); line-height: 1; letter-spacing: -.03em; font-variant-numeric: tabular-nums; }
+.proof strong em { font-style: normal; color: var(--signal); }
+.proof span { font-size: var(--s-1); opacity: .75; }
+@media (max-width: 860px) { .proof ul { grid-template-columns: repeat(2, minmax(0, 1fr)); } .proof li:last-child { grid-column: 1 / -1; } }
+
+/* ledger sections */
+section.row { border-bottom: 1px solid var(--line); }
+section.row .wrap { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 24px 48px; padding-block: clamp(40px, 6vw, 76px); }
+.rail .sticky { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 72px); }
+.rail h2 { font-family: var(--f-display); font-weight: 700; font-size: var(--s2); line-height: 1.1; letter-spacing: -.02em; margin: 6px 0 0; text-wrap: balance; }
+.rail p { color: var(--muted); font-size: var(--s-1); margin: 10px 0 0; max-width: 22em; }
+@media (max-width: 760px) { section.row .wrap { grid-template-columns: 1fr; } .rail .sticky { position: static; } }
+
+/* roster */
+.tablebox { overflow-x: auto; }
+.roster { width: 100%; border-collapse: collapse; }
+.roster th { text-align: left; font: 500 .75rem/1 var(--f-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); padding: 0 12px 10px 0; border-bottom: 1px solid var(--ink); white-space: nowrap; }
+.roster td { padding: 12px 12px 12px 0; border-bottom: 1px solid var(--line); vertical-align: baseline; }
+.roster td:first-child { font-family: var(--f-display); font-weight: 700; font-size: var(--s1); letter-spacing: -.01em; white-space: nowrap; }
+.roster td.sector, .roster td.group { color: var(--muted); }
+.roster td.group { font-size: var(--s-1); white-space: nowrap; }
+.eu { display: inline-block; font: 500 .68rem/1 var(--f-mono); letter-spacing: .06em; text-transform: uppercase; color: var(--teal); background: color-mix(in srgb, var(--teal) 12%, transparent); border-radius: 4px; padding: 3px 6px; margin-left: 6px; vertical-align: 1px; }
+:root[data-theme="dark"] .eu { color: var(--signal-ink); background: color-mix(in srgb, var(--signal) 14%, transparent); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .eu { color: var(--signal-ink); background: color-mix(in srgb, var(--signal) 14%, transparent); } }
+.callout { margin: 18px 0 0; padding: 14px 16px; border-left: 3px solid var(--signal); background: var(--paper); font-size: var(--s0); max-width: 62ch; }
+
+/* playbook */
+.steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0; border: 1px solid var(--line); border-radius: 10px; background: var(--paper); overflow: hidden; counter-reset: step; }
+.steps li { padding: 20px 18px; border-left: 1px solid var(--line); display: flex; flex-direction: column; gap: 8px; min-width: 0; counter-increment: step; }
+.steps li:first-child { border-left: 0; }
+.steps li::before { content: "0" counter(step); font: 500 .75rem/1 var(--f-mono); color: var(--signal-ink); letter-spacing: .06em; }
+.steps h3 { margin: 0; font-family: var(--f-display); font-weight: 700; font-size: 1.05rem; line-height: 1.2; letter-spacing: -.01em; }
+.steps p { margin: 0; font-size: var(--s-1); color: var(--muted); }
+.kpis { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
+.kpis span { font: 500 .7rem/1 var(--f-mono); border: 1px solid var(--line); border-radius: 4px; padding: 4px 6px; color: var(--ink); }
+@media (max-width: 1000px) { .steps { grid-template-columns: 1fr; } .steps li { border-left: 0; border-top: 1px solid var(--line); } .steps li:first-child { border-top: 0; } }
+
+/* capabilities */
+.caps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; }
+.cap h3 { font-family: var(--f-display); font-size: var(--s1); font-weight: 700; margin: 0 0 8px; letter-spacing: -.01em; }
+.cap p { margin: 0 0 12px; }
+.cap ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 6px; font-size: var(--s-1); color: var(--muted); }
+.cap ul li::before { content: "→ "; color: var(--signal-ink); }
+@media (max-width: 960px) { .caps { grid-template-columns: 1fr; gap: 28px; } }
+
+/* timeline */
+.timeline { list-style: none; margin: 0; padding: 0; }
+.job { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 4px 28px; padding: 22px 0; border-top: 1px solid var(--line); }
+.job:first-child { border-top: 0; padding-top: 0; }
+.when { font-family: var(--f-mono); font-size: var(--s-1); color: var(--muted); font-variant-numeric: tabular-nums; padding-top: 4px; }
+.when .now { display: inline-block; margin-top: 4px; color: var(--good); }
+.job h3 { margin: 0; font-family: var(--f-display); font-weight: 700; font-size: var(--s1); letter-spacing: -.01em; }
+.job .org { margin: 2px 0 10px; color: var(--muted); font-size: var(--s-1); }
+.job .gist { margin: 0 0 8px; font-weight: 600; max-width: 62ch; }
+.job ul { margin: 0; padding-left: 1.1em; display: grid; gap: 4px; max-width: 62ch; }
+.job ul li::marker { color: var(--signal-ink); }
+.job.compact .org { margin-bottom: 0; }
+@media (max-width: 560px) { .job { grid-template-columns: 1fr; } }
+
+/* europe */
+.eu-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 20px; }
+.panel { border: 1px solid var(--line); border-radius: 10px; padding: 22px; background: var(--paper); min-width: 0; }
+.panel.dark { background: var(--teal); color: var(--teal-ink); border-color: var(--teal); }
+.panel h3 { margin: 0 0 14px; font-family: var(--f-display); font-weight: 700; font-size: var(--s1); letter-spacing: -.01em; }
+.panel dl { margin: 0; display: grid; gap: 14px; }
+.panel dt { font-weight: 600; }
+.panel dd { margin: 2px 0 0; font-size: var(--s-1); opacity: .82; }
+@media (max-width: 860px) { .eu-grid { grid-template-columns: 1fr; } }
+
+/* builds */
+.builds { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.build { background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 22px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.build.lead { grid-column: 1 / -1; background: var(--teal); color: var(--teal-ink); border-color: var(--teal); }
+.build.lead .stack li { border-color: color-mix(in srgb, var(--teal-ink) 30%, transparent); color: var(--teal-ink); }
+.build.lead .meta { color: color-mix(in srgb, var(--teal-ink) 75%, transparent); }
+.build header { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+.build h3 { margin: 0; font-family: var(--f-display); font-weight: 700; font-size: var(--s1); letter-spacing: -.01em; }
+.build.lead h3 { font-size: var(--s2); }
+.build p { margin: 0; max-width: 64ch; }
+.status { font: 500 .72rem/1 var(--f-mono); letter-spacing: .06em; text-transform: uppercase; padding: 5px 9px; border-radius: 999px; border: 1px solid currentColor; white-space: nowrap; }
+.status.live { color: var(--good); }
+.status.wip { color: var(--signal-ink); }
+.build.lead .status { color: var(--signal); }
+.meta { font-family: var(--f-mono); font-size: .75rem; color: var(--muted); margin: 0; }
+.stack { display: flex; flex-wrap: wrap; gap: 6px; list-style: none; margin: auto 0 0; padding: 4px 0 0; }
+.gh { font: 600 var(--s-1)/1 var(--f-body); color: var(--teal); text-decoration: none; margin-top: 4px; }
+.gh:hover { text-decoration: underline; }
+.build.lead .gh { color: var(--signal); }
+:root[data-theme="dark"] .gh { color: var(--signal-ink); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .gh { color: var(--signal-ink); } }
+.stack li { font-size: .75rem; border: 1px solid var(--line); border-radius: 6px; padding: 3px 8px; color: var(--muted); }
+.flow { display: flex; flex-wrap: wrap; gap: 6px 4px; align-items: center; margin: 4px 0; font: 500 var(--s-1)/1.3 var(--f-mono); }
+.flow span { background: color-mix(in srgb, var(--teal-ink) 12%, transparent); padding: 6px 10px; border-radius: 6px; }
+.flow i { font-style: normal; color: var(--signal); }
+@media (max-width: 760px) { .builds { grid-template-columns: 1fr; } }
+
+/* education */
+.edu { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 40px; }
+.edu h3 { font: 500 .75rem/1 var(--f-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 0 0 12px; padding-bottom: 10px; border-bottom: 1px solid var(--ink); }
+.edu dl { margin: 0; display: grid; gap: 14px; }
+.edu dt { font-weight: 600; }
+.edu dd { margin: 2px 0 0; color: var(--muted); font-size: var(--s-1); }
+@media (max-width: 760px) { .edu { grid-template-columns: 1fr; } }
+
+/* contact */
+.contact { background: var(--ink); color: var(--bone); }
+.contact .wrap { padding-block: clamp(48px, 8vw, 96px); display: grid; gap: 26px; }
+.contact .eyebrow { color: inherit; opacity: .7; }
+.contact h2 { font-family: var(--f-display); font-weight: 800; font-size: clamp(2rem, 5vw, 3.6rem); line-height: 1.02; letter-spacing: -.03em; margin: 0; max-width: 16em; text-wrap: balance; }
+.contact h2 em { font-style: normal; color: var(--signal); }
+.contact p { margin: 0; max-width: 50ch; opacity: .82; }
+.roles { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin: 0; padding: 0; }
+.roles li { font-size: var(--s-1); border: 1px solid color-mix(in srgb, var(--bone) 30%, transparent); border-radius: 999px; padding: 5px 12px; }
+.mailrow { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+.addr { font: 500 clamp(1rem, 2.6vw, 1.35rem)/1.2 var(--f-mono); user-select: all; word-break: break-all; }
+.contact .btn { border-color: var(--bone); color: var(--bone); }
+.contact .btn.primary { background: var(--bone); color: var(--ink); }
+.foot { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; font: 400 .75rem/1.4 var(--f-mono); opacity: .6; padding-top: 24px; border-top: 1px solid color-mix(in srgb, var(--bone) 18%, transparent); }
+
+/* ---- interactive layer ---- */
+.nav .wrap { position: relative; }
+.progress { position: absolute; left: 0; right: 0; bottom: -1px; height: 2px; background: var(--signal); transform-origin: 0 50%; transform: scaleX(0); }
+.navright { display: flex; align-items: center; gap: clamp(12px, 2.4vw, 24px); }
+.nav ul a[aria-current="true"] { color: var(--ink); box-shadow: 0 2px 0 var(--signal); }
+.tool { display: inline-flex; align-items: center; gap: 6px; height: 30px; padding: 0 9px; border: 1px solid var(--line); border-radius: 7px; background: var(--paper); color: var(--ink); font: 500 .72rem/1 var(--f-mono); cursor: pointer; }
+.tool:hover { border-color: var(--ink); }
+.tool kbd { font: inherit; }
+.tool svg { width: 15px; height: 15px; }
+@media (max-width: 620px) { .tool .k { display: none; } }
+@media (max-width: 440px) { .nav ul { display: none; } }
+
+.field canvas { cursor: crosshair; touch-action: pan-y; }
+
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; padding: 3px; gap: 3px; background: var(--paper); margin-bottom: 16px; flex-wrap: wrap; }
+.seg button { border: 0; background: transparent; color: var(--muted); font: 500 var(--s-1)/1 var(--f-body); padding: 8px 12px; border-radius: 6px; cursor: pointer; }
+.seg button[aria-pressed="true"] { background: var(--ink); color: var(--bone); }
+.roster tbody tr { transition: opacity .25s; }
+.roster.eu-only tbody tr:not([data-eu]) { opacity: .28; }
+
+.calc { margin-top: 24px; display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+.calc .inputs { padding: 22px; display: grid; gap: 16px; background: var(--paper); min-width: 0; }
+.calc h3 { margin: 0; font-family: var(--f-display); font-weight: 700; font-size: var(--s1); letter-spacing: -.01em; }
+.calc .sub { margin: -10px 0 0; font-size: var(--s-1); color: var(--muted); }
+.slider { display: grid; gap: 6px; }
+.slider label { display: flex; justify-content: space-between; gap: 12px; font-size: var(--s-1); }
+.slider output { font-family: var(--f-mono); font-variant-numeric: tabular-nums; font-weight: 500; }
+.slider input { width: 100%; accent-color: var(--teal); }
+.calc .outs { background: var(--teal); color: var(--teal-ink); padding: 22px; display: grid; grid-template-columns: 1fr 1fr; gap: 18px 16px; align-content: center; min-width: 0; }
+.calc .outs div { display: grid; gap: 4px; }
+.calc .outs span { font: 500 .7rem/1.2 var(--f-mono); letter-spacing: .06em; text-transform: uppercase; opacity: .75; }
+.calc .outs strong { font-family: var(--f-display); font-weight: 800; font-size: clamp(1.35rem, 2.6vw, 1.9rem); letter-spacing: -.02em; line-height: 1.05; font-variant-numeric: tabular-nums; }
+.calc .outs .hl strong { color: var(--signal); }
+.calc .outs p { grid-column: 1 / -1; margin: 0; font-size: .75rem; opacity: .7; }
+@media (max-width: 760px) { .calc { grid-template-columns: 1fr; } }
+
+.flow span { transition: background .3s, color .3s; }
+.flow span.on { background: var(--signal); color: var(--teal); }
+.steps li { transition: background .2s; }
+.steps li:hover { background: color-mix(in srgb, var(--signal) 9%, transparent); }
+
+.pal-back { position: fixed; inset: 0; z-index: 50; background: color-mix(in srgb, var(--ink) 40%, transparent); display: grid; place-items: start center; padding: 12vh 16px 16px; }
+.pal { width: min(560px, 100%); background: var(--paper); color: var(--ink); border: 1px solid var(--line); border-radius: 12px; box-shadow: 0 24px 60px -20px rgba(0,0,0,.45); overflow: hidden; }
+.pal input { width: 100%; border: 0; border-bottom: 1px solid var(--line); background: transparent; color: var(--ink); font: 400 1rem var(--f-body); padding: 16px 18px; outline: none; }
+.pal ul { list-style: none; margin: 0; padding: 6px; max-height: 50vh; overflow-y: auto; }
+.pal li { display: flex; justify-content: space-between; gap: 12px; padding: 10px 12px; border-radius: 8px; cursor: pointer; font-size: .95rem; }
+.pal li small { font-family: var(--f-mono); font-size: .7rem; color: var(--muted); }
+.pal li[aria-selected="true"] { background: var(--ink); color: var(--bone); }
+.pal li[aria-selected="true"] small { color: var(--bone); opacity: .7; }
+.pal .foothint { font: 400 .7rem var(--f-mono); color: var(--muted); padding: 8px 16px 10px; border-top: 1px solid var(--line); }
+.toast { position: fixed; left: 50%; bottom: calc(env(safe-area-inset-bottom, 0px) + 20px); transform: translateX(-50%); background: var(--ink); color: var(--bone); font: 500 var(--s-1)/1 var(--f-body); padding: 11px 16px; border-radius: 8px; z-index: 60; }
+@media (prefers-reduced-motion: reduce) { .roster tbody tr, .flow span, .steps li { transition: none; } }
+
+/* ---- v2: all-rounder layer ---- */
+section.row .wrap > * { min-width: 0; }
+.pal-back[hidden], .toast[hidden] { display: none !important; }
+.field canvas { cursor: grab; } .field canvas:active { cursor: grabbing; }
+@media (max-width: 760px) { section.row .wrap { grid-template-columns: minmax(0, 1fr); } }
+h1 { font-size: clamp(2.4rem, 5.2vw, 4.3rem); }
+.pb { min-width: 0; container-type: inline-size; }
+@container (max-width: 700px) { .calc { grid-template-columns: 1fr; } }
+.calc .outs strong { font-size: clamp(1.25rem, 2.2vw, 1.75rem); overflow-wrap: anywhere; }
+
+.reel { border-bottom: 1px solid var(--line); height: 230vh; position: relative; }
+.reel-pin { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 56px); min-height: calc(100vh - 56px); display: flex; flex-direction: column; justify-content: center; gap: 18px; padding-block: 40px; }
+.words { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
+.words li { display: grid; grid-template-columns: minmax(0, auto) minmax(0, 1fr); align-items: baseline; gap: 6px 28px; opacity: .22; transition: opacity .45s ease, transform .45s ease; transform-origin: left center; }
+.words li.on { opacity: 1; transform: translateX(6px); }
+.words b { font-family: var(--f-display); font-weight: 800; font-size: clamp(2.6rem, 8.5vw, 6.6rem); line-height: 1; letter-spacing: -.045em; }
+.words li:nth-child(1) b { color: var(--teal); }
+.words li:nth-child(3) b, .words li:nth-child(5) b { color: var(--signal-ink); }
+.words span { font-size: var(--s1); color: var(--muted); max-width: 30ch; }
+@media (max-width: 760px) { .words li { grid-template-columns: 1fr; } .words span { font-size: var(--s0); } .reel { height: 200vh; } }
+@media (prefers-reduced-motion: reduce) { .reel { height: auto; } .reel-pin { position: static; min-height: 0; } .words li { opacity: 1; transform: none; } }
+.no-js-reel .words li { opacity: 1; }
+
+.caps6 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.caps6 .cap { background: var(--paper); border: 1px solid var(--line); border-radius: 14px; padding: 22px; min-width: 0; }
+.caps6 .cap p { margin: 0 0 12px; }
+.ico { display: inline-grid; place-items: center; width: 38px; height: 38px; border-radius: 10px; background: var(--teal); color: var(--teal-ink); font-size: 18px; margin-bottom: 14px; }
+@media (max-width: 1100px) { .caps6 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 620px) { .caps6 { grid-template-columns: 1fr; } }
+
+.tilt { transition: transform .35s cubic-bezier(.2,.7,.2,1), box-shadow .35s; transform-style: preserve-3d; will-change: transform; }
+.tilt.lift { box-shadow: 0 18px 40px -22px rgba(0,0,0,.35); }
+@media (prefers-reduced-motion: reduce) { .tilt { transition: none; } }
+
+.chips { margin-bottom: 18px; }
+.links { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-top: 4px; }
+.build[hidden] { display: none !important; }
+
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .reveal, .builds > .build, .timeline > .job, .roster tbody tr, .steps li { animation: rise linear both; animation-timeline: view(); animation-range: entry 0% entry 45%; }
+    @keyframes rise { from { opacity: .3; transform: translateY(26px) scale(.985); } to { opacity: 1; transform: none; } }
+  }
+}
+
+/* ---- v3: premium live layer ---- */
+.hero { position: relative; overflow: hidden; isolation: isolate; }
+.hero-text::before { content: ""; position: absolute; z-index: -1; width: 46vw; height: 46vw; max-width: 620px; max-height: 620px; left: -12vw; top: -14vw; border-radius: 50%;
+  background: radial-gradient(circle at 40% 40%, color-mix(in srgb, var(--teal) 16%, transparent), transparent 62%), radial-gradient(circle at 70% 70%, color-mix(in srgb, var(--signal) 12%, transparent), transparent 58%);
+  filter: blur(10px); animation: drift 18s ease-in-out infinite alternate; pointer-events: none; }
+@keyframes drift { to { transform: translate(6vw, 4vw) rotate(25deg) scale(1.08); } }
+.live { margin: 0; display: inline-flex; align-items: center; gap: 10px; font: 500 var(--s-1)/1 var(--f-mono); color: var(--good); }
+.live #localTime { font-variant-numeric: tabular-nums; }
+.pulse { width: 8px; height: 8px; border-radius: 50%; background: var(--good); box-shadow: 0 0 0 0 color-mix(in srgb, var(--good) 55%, transparent); animation: pulse 2.4s ease-out infinite; }
+@keyframes pulse { 70% { box-shadow: 0 0 0 10px transparent; } 100% { box-shadow: 0 0 0 0 transparent; } }
+.field { position: relative; }
+.field canvas { touch-action: pan-y; outline: none; }
+.field canvas:focus-visible { box-shadow: inset 0 0 0 2px var(--signal); }
+.ghint { position: absolute; left: 50%; top: 22px; transform: translateX(-50%); display: inline-flex; align-items: center; gap: 10px; white-space: nowrap;
+  font: 500 12px/1 var(--f-mono); color: var(--teal-ink); background: color-mix(in srgb, #000 22%, transparent); border: 1px solid color-mix(in srgb, var(--teal-ink) 22%, transparent);
+  padding: 9px 14px; border-radius: 999px; backdrop-filter: blur(6px); transition: opacity .6s, transform .6s; pointer-events: none; }
+.ghint.gone { opacity: 0; transform: translate(-50%, -8px); }
+.ring { width: 10px; height: 10px; border-radius: 50%; border: 1.5px solid var(--signal); animation: pulse2 1.8s ease-out infinite; }
+@keyframes pulse2 { 0% { transform: scale(.6); opacity: 1; } 100% { transform: scale(1.6); opacity: 0; } }
+@media (max-width: 480px) { .ghint { font-size: 11px; top: 14px; } }
+
+.btn { transition: transform .25s cubic-bezier(.2,.7,.2,1), background .2s, color .2s; }
+
+.spot { position: relative; }
+.spot::after { content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; opacity: 0; transition: opacity .3s;
+  background: radial-gradient(260px circle at var(--mx, 50%) var(--my, 50%), color-mix(in srgb, var(--signal) 13%, transparent), transparent 70%); }
+.spot:hover::after { opacity: 1; }
+.build.lead.spot::after { background: radial-gradient(320px circle at var(--mx, 50%) var(--my, 50%), rgba(255,255,255,.09), transparent 70%); }
+
+.marquee { overflow: hidden; border-bottom: 1px solid var(--line); background: var(--paper); -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
+.marquee .track { display: flex; align-items: center; gap: 28px; width: max-content; padding-block: 16px; animation: slide 46s linear infinite; }
+.marquee:hover .track { animation-play-state: paused; }
+.marquee span { font-family: var(--f-display); font-weight: 700; font-size: 1.15rem; letter-spacing: -.01em; color: var(--muted); white-space: nowrap; }
+.marquee span.alt { color: var(--teal); }
+.marquee i { font-style: normal; color: var(--signal); font-size: .8rem; }
+@keyframes slide { to { transform: translateX(-50%); } }
+
+.timeline { position: relative; }
+.timeline::before { content: ""; position: absolute; left: -22px; top: 6px; bottom: 6px; width: 2px; background: var(--line); border-radius: 2px; }
+.timeline::after { content: ""; position: absolute; left: -22px; top: 6px; width: 2px; height: calc((100% - 12px) * var(--tp, 0)); background: linear-gradient(var(--teal), var(--signal)); border-radius: 2px; transition: height .15s linear; }
+@media (max-width: 760px) { .timeline::before, .timeline::after { left: -12px; } }
+
+.cap h3, .build h3 { transition: color .25s; }
+.cap:hover h3, .build:not(.lead):hover h3 { color: var(--teal); }
+.ico { transition: transform .4s cubic-bezier(.2,.7,.2,1); }
+.cap:hover .ico { transform: rotate(-8deg) scale(1.08); }
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-text::before, .pulse, .ring, .marquee .track { animation: none; }
+  .marquee .track { width: auto; flex-wrap: wrap; padding-inline: 16px; }
+  .marquee span[aria-hidden="true"], .marquee span[aria-hidden="true"] + i { display: none; }
+}
+
+/* ---- v4: CV viewer, language + day/night ---- */
+.seg2 { gap: 0; padding: 3px; }
+.seg2 span { padding: 4px 7px; border-radius: 5px; color: var(--muted); transition: background .2s, color .2s; }
+html[lang="en"] .seg2 [data-l="en"], html[lang="de"] .seg2 [data-l="de"] { background: var(--ink); color: var(--bone); }
+.i-moon { display: block; } .i-sun { display: none; }
+.is-dark .i-moon { display: none; } .is-dark .i-sun { display: block; }
+.theming, .theming * { transition: background-color .5s ease, color .5s ease, border-color .5s ease !important; }
+.cvbox { min-width: 0; display: grid; gap: 16px; }
+.cvtabs { display: none; gap: 6px; }
+.cvtabs button { flex: 1; font: 600 var(--s-1)/1 var(--f-body); padding: 10px; border-radius: 8px; border: 1px solid var(--line); background: var(--paper); color: var(--muted); cursor: pointer; }
+.cvtabs button[aria-selected="true"] { background: var(--ink); color: var(--bone); border-color: var(--ink); }
+.cvpages { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; perspective: 1400px; }
+.cvpage { margin: 0; cursor: zoom-in; border-radius: 10px; overflow: hidden; background: #fff; border: 1px solid var(--line); box-shadow: 0 24px 50px -30px rgba(0,0,0,.45); transition: transform .5s cubic-bezier(.2,.7,.2,1), box-shadow .5s; }
+.cvpage img { display: block; width: 100%; height: auto; max-width: 100%; aspect-ratio: 210 / 297; }
+.cvpage figcaption { font: 500 .72rem/1 var(--f-mono); color: #56645F; padding: 10px 12px; border-top: 1px solid #e4dfd3; background: #FBFAF6; }
+.cvpages:hover .cvpage[data-p="1"] { transform: rotateY(5deg) translateX(-4px); }
+.cvpages:hover .cvpage[data-p="2"] { transform: rotateY(-5deg) translateX(4px); }
+.cvactions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.cvmeta { font: 500 var(--s-1)/1 var(--f-mono); color: var(--muted); margin-left: 4px; }
+@media (max-width: 760px) {
+  .cvtabs { display: flex; }
+  .cvpages { grid-template-columns: 1fr; }
+  .cvpages:hover .cvpage { transform: none; }
+  .cvpages[data-show="1"] .cvpage[data-p="2"], .cvpages[data-show="2"] .cvpage[data-p="1"] { display: none; }
+}
+.lightbox { position: fixed; inset: 0; z-index: 70; background: rgba(10,16,15,.82); display: grid; place-items: center; padding: calc(env(safe-area-inset-top, 0px) + 16px) 16px 16px; overflow: auto; }
+.lightbox[hidden] { display: none !important; }
+.lightbox img { max-width: min(980px, 100%); width: 100%; height: auto; border-radius: 8px; box-shadow: 0 30px 80px rgba(0,0,0,.5); }
+.lb-close { position: fixed; top: calc(env(safe-area-inset-top, 0px) + 14px); right: 16px; width: 42px; height: 42px; border-radius: 50%; border: 0; background: #fff; color: #142220; font-size: 24px; cursor: pointer; }
+@media (prefers-reduced-motion: reduce) { .cvpage, .cvpages:hover .cvpage { transition: none; transform: none; } .theming, .theming * { transition: none !important; } }
+</style>
+</head>
+<body>
+
+
+<nav class="nav" aria-label="Main">
+  <div class="wrap">
+    <a class="mark" href="#top">Vish<span>.</span>Kumbhar</a>
+    <div class="navright">
+    <ul>
+      <li class="hide-s"><a href="#brands">Brands</a></li>
+      <li class="hide-s"><a href="#playbook">Playbook</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#builds">Work</a></li>
+      <li><a href="#cv">CV</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="tool" id="palBtn" type="button" aria-label="Open quick menu"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5 14 14"/></svg><kbd class="k">⌘K</kbd></button>
+    <button class="tool seg2" id="langBtn" type="button" aria-label="Sprache wechseln / switch language"><span data-l="en">EN</span><span data-l="de">DE</span></button>
+    <button class="tool" id="themeBtn" type="button" aria-label="Switch day or night mode"><svg class="i-sun" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1.5v1.6M8 12.9v1.6M1.5 8h1.6M12.9 8h1.6M3.4 3.4l1.1 1.1M11.5 11.5l1.1 1.1M3.4 12.6l1.1-1.1M11.5 4.5l1.1-1.1"/></svg><svg class="i-moon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M13.5 9.6A5.8 5.8 0 0 1 6.4 2.5a5.8 5.8 0 1 0 7.1 7.1z"/></svg><span class="k" id="themeLbl">Night</span></button>
+    </div>
+    <div class="progress" id="progress" aria-hidden="true"></div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-text">
+    <p class="eyebrow">Digital marketing · Growth · Partnerships · AI</p>
+    <p class="live"><span class="pulse" aria-hidden="true"></span>Open to remote roles · <span id="localTime">--:--</span> in Germany</p>
+    <h1>I grow brands with <em>creators, campaigns</em> and AI.</h1>
+    <p class="who">Vishwajeet Kumbhar <span>· Vish</span></p>
+    <p class="lede">Five years across creator partnerships, paid and organic social, client leadership and campaign reporting, for brands like HUL (Unilever), Philips, L'Oréal and Tata. Now in Germany, I build AI tools that make marketing teams faster.</p>
+    <ul class="facts">
+      <li>Remote-first · based in Germany</li>
+      <li>Berlin from Dec 2026</li>
+      <li>English-first teams</li>
+    </ul>
+    <div class="ctas">
+      <a class="btn primary" href="#contact">Get in touch</a>
+      <a class="btn" href="#cv">View CV</a>
+      <a class="btn" href="https://www.linkedin.com/in/vishwajeetkumbhar379" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a class="btn" href="https://github.com/Vishwajeetkumbhar379" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+  </div>
+  <figure class="field" aria-label="A rotating globe of 850 dots, one for each creator deal">
+    <canvas id="deals" tabindex="0" aria-label="Globe of 850 creator deals. Press Enter to reveal the brands, plus or minus to zoom."></canvas>
+    <div class="ghint" id="globeHint" aria-hidden="true"><span class="ring"></span>Click to reveal brands · scroll to zoom · drag to spin</div>
+    <figcaption>
+      <span class="big">850<em>+</em></span>
+      <span class="cap" id="dealCap">creator deals across 9 global brands</span>
+    </figcaption>
+  </figure>
+</header>
+
+<div class="proof" aria-label="Career in numbers">
+  <ul class="wrap">
+    <li><strong><span data-n="5">5</span><em>+</em></strong><span>years in creator and brand marketing</span></li>
+    <li><strong><span data-n="850">850</span><em>+</em></strong><span>creators managed across campaigns</span></li>
+    <li><strong><span data-n="12">12</span></strong><span>people in the team I led</span></li>
+    <li><strong><span data-n="9">9</span></strong><span>global and national brands</span></li>
+    <li><strong><span data-n="3">3</span></strong><span>agencies, Mumbai and remote</span></li>
+  </ul>
+</div>
+
+<div class="marquee" aria-label="Brands and disciplines">
+  <div class="track">
+    <span>HUL</span><i>✦</i><span>Philips</span><i>✦</i><span>L'Oréal</span><i>✦</i><span>Lakmé</span><i>✦</i><span>Tata</span><i>✦</i><span>Bumble</span><i>✦</i><span>Vans</span><i>✦</i><span>Raymond</span><i>✦</i><span>Universal Pictures</span><i>✦</i><span class="alt">Growth</span><i>✦</i><span class="alt">Performance</span><i>✦</i><span class="alt">Partnerships</span><i>✦</i><span class="alt">Clients</span><i>✦</i><span class="alt">AI</span><i>✦</i>
+    <span aria-hidden="true">HUL</span><i>✦</i><span aria-hidden="true">Philips</span><i>✦</i><span aria-hidden="true">L'Oréal</span><i>✦</i><span aria-hidden="true">Lakmé</span><i>✦</i><span aria-hidden="true">Tata</span><i>✦</i><span aria-hidden="true">Bumble</span><i>✦</i><span aria-hidden="true">Vans</span><i>✦</i><span aria-hidden="true">Raymond</span><i>✦</i><span aria-hidden="true">Universal Pictures</span><i>✦</i><span class="alt" aria-hidden="true">Growth</span><i>✦</i><span class="alt" aria-hidden="true">Performance</span><i>✦</i><span class="alt" aria-hidden="true">Partnerships</span><i>✦</i><span class="alt" aria-hidden="true">Clients</span><i>✦</i><span class="alt" aria-hidden="true">AI</span><i>✦</i>
+  </div>
+</div>
+
+<section class="reel" id="reel" aria-label="What I do">
+  <div class="reel-pin wrap">
+    <p class="eyebrow">One marketer, five jobs</p>
+    <ol class="words">
+      <li><b>Growth.</b><span>Experiments, funnels and lifecycle, measured properly.</span></li>
+      <li><b>Performance.</b><span>Meta, Google and LinkedIn Ads, judged on CPA and ROAS.</span></li>
+      <li><b>Partnerships.</b><span>850+ creator deals for global consumer brands.</span></li>
+      <li><b>Clients.</b><span>A 12-person team and 20+ brand accounts, led end to end.</span></li>
+      <li><b>AI.</b><span>Agents, MCP servers and Claude workflows I build myself.</span></li>
+    </ol>
+  </div>
+</section>
+
+<section class="row" id="brands">
+  <div class="wrap">
+    <div class="rail"><div class="sticky">
+      <p class="eyebrow">Roster</p>
+      <h2>Brands I've run creator work for</h2>
+      <p>Delivered through agency teams at Illuminati Media, Pollen (Zoo Media) and White Rivers Media.</p>
+    </div></div>
+    <div>
+      <div class="seg" role="group" aria-label="Filter brands">
+        <button type="button" id="fAll" aria-pressed="true">All 9 brands</button>
+        <button type="button" id="fEu" aria-pressed="false">European groups only</button>
+      </div>
+      <div class="tablebox">
+        <table class="roster" id="roster">
+          <thead><tr><th scope="col">Brand</th><th scope="col">Category</th><th scope="col">Parent group</th></tr></thead>
+          <tbody>
+            <tr data-eu><td>Hindustan Unilever</td><td class="sector">FMCG</td><td class="group">Unilever · UK<span class="eu">Europe HQ</span></td></tr>
+            <tr data-eu><td>Philips</td><td class="sector">Personal care, electronics</td><td class="group">Philips · Netherlands<span class="eu">Europe HQ</span></td></tr>
+            <tr data-eu><td>L'Oréal</td><td class="sector">Beauty</td><td class="group">L'Oréal · France<span class="eu">Europe HQ</span></td></tr>
+            <tr data-eu><td>Lakmé</td><td class="sector">Beauty</td><td class="group">Unilever · UK<span class="eu">Europe HQ</span></td></tr>
+            <tr><td>Tata</td><td class="sector">Consumer brands</td><td class="group">Tata Group · India</td></tr>
+            <tr><td>Bumble</td><td class="sector">Consumer app</td><td class="group">Bumble · US</td></tr>
+            <tr><td>Vans</td><td class="sector">Footwear, streetwear</td><td class="group">VF Corp · US</td></tr>
+            <tr><td>Universal Pictures</td><td class="sector">Entertainment</td><td class="group">NBCUniversal · US</td></tr>
+            <tr><td>Raymond</td><td class="sector">Fashion</td><td class="group">Raymond · India</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="callout">Four of these nine brands belong to European groups. I'm used to global brand guidelines, multi-step client approvals and reporting that has to travel up to a regional team.</p>
+    </div>
+  </div>
+</section>
+
+<section class="row" id="playbook">
+  <div class="wrap">
+    <div class="rail"><div class="sticky">
+      <p class="eyebrow">Playbook</p>
+      <h2>How I run a creator program</h2>
+      <p>The same five stages, whether it's 10 creators or 100, in any market.</p>
+    </div></div>
+    <div class="pb">
+    <ol class="steps">
+      <li><h3>Brief and goal</h3><p>Turn the brand ask into one measurable goal, an audience and a budget per creator tier.</p><div class="kpis"><span>Objective</span><span>Budget</span></div></li>
+      <li><h3>Creator selection</h3><p>Shortlist on audience fit, past content and engagement quality, not follower count alone.</p><div class="kpis"><span>Fit</span><span>ER</span></div></li>
+      <li><h3>Negotiation</h3><p>Agree rates, deliverables, usage rights and timelines that protect both sides.</p><div class="kpis"><span>Rate</span><span>Rights</span></div></li>
+      <li><h3>Content and approvals</h3><p>Brief creators, manage drafts and brand approvals, keep every post on schedule.</p><div class="kpis"><span>On-time</span></div></li>
+      <li><h3>Report and optimise</h3><p>Report what moved, then reallocate budget to the creators and formats that worked.</p><div class="kpis"><span>Reach</span><span>CPR</span><span>Conv.</span></div></li>
+    </ol>
+    <div class="calc" aria-labelledby="calcH">
+      <div class="inputs">
+        <h3 id="calcH">Run the numbers</h3>
+        <p class="sub">The quick math I do before pitching a creator plan. Drag to try it.</p>
+        <div class="slider"><label for="cBudget">Campaign budget <output id="oBudget"></output></label><input type="range" id="cBudget" min="2000" max="100000" step="1000" value="15000"></div>
+        <div class="slider"><label for="cCreators">Creators <output id="oCreators"></output></label><input type="range" id="cCreators" min="1" max="100" step="1" value="12"></div>
+        <div class="slider"><label for="cReach">Average reach per post <output id="oReach"></output></label><input type="range" id="cReach" min="2000" max="500000" step="1000" value="40000"></div>
+        <div class="slider"><label for="cEr">Engagement rate <output id="oEr"></output></label><input type="range" id="cEr" min="0.5" max="10" step="0.1" value="3.5"></div>
+      </div>
+      <div class="outs" aria-live="polite">
+        <div><span>Total reach</span><strong id="rReach">0</strong></div>
+        <div><span>Engagements</span><strong id="rEng">0</strong></div>
+        <div class="hl"><span>Cost per 1,000 reached</span><strong id="rCpm">0</strong></div>
+        <div class="hl"><span>Cost per engagement</span><strong id="rCpe">0</strong></div>
+        <div><span>Budget per creator</span><strong id="rPer">0</strong></div>
+        <div><span>Plan check</span><strong id="rVerdict">-</strong></div>
+        <p>Illustrative only. Real benchmarks depend on platform, market and creator tier.</p>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<section class="row" id="work">
+  <div class="wrap">
+    <div class="rail"><div class="sticky">
+      <p class="eyebrow">Strengths</p>
+      <h2>What I'm hired for</h2>
+      <p>Strongest in creator partnerships and client leadership, with hands-on growth, paid media and AI skills around them.</p>
+    </div></div>
+    <div class="caps6">
+      <article class="cap tilt reveal spot"><span class="ico" aria-hidden="true">↗</span><h3>Growth marketing</h3>
+        <p>Funnels, experiments and lifecycle, with the maths done properly.</p>
+        <ul><li>A/B test design and reading</li><li>ICE prioritisation, funnel metrics</li><li>Built a growth experiment toolkit</li></ul></article>
+      <article class="cap tilt reveal spot"><span class="ico" aria-hidden="true">◎</span><h3>Performance marketing</h3>
+        <p>Paid social and search, judged on cost per result.</p>
+        <ul><li>Meta, Google and LinkedIn Ads for international audiences</li><li>Certified in paid ads, SEO and SEM</li><li>Built a paid-media review copilot</li></ul></article>
+      <article class="cap tilt reveal spot"><span class="ico" aria-hidden="true">✦</span><h3>Creator &amp; brand partnerships</h3>
+        <p>From shortlist to signed post, at scale.</p>
+        <ul><li>850+ creators across lifestyle and FMCG</li><li>Negotiation, briefs, approvals</li><li>Reach, engagement, CPR, conversion reporting</li></ul></article>
+      <article class="cap tilt reveal spot"><span class="ico" aria-hidden="true">◇</span><h3>Client &amp; account management</h3>
+        <p>Owning the relationship and the team that delivers it.</p>
+        <ul><li>Led a 12-person team, 20+ brand accounts</li><li>P&amp;L view, cross-sell and upsell</li><li>Built a client health scoring tool</li></ul></article>
+      <article class="cap tilt reveal spot"><span class="ico" aria-hidden="true">▤</span><h3>Content &amp; social</h3>
+        <p>Content that people save, share and act on.</p>
+        <ul><li>LinkedIn content for a business school</li><li>Instagram and YouTube campaigns</li><li>Built a carousel production system</li></ul></article>
+      <article class="cap tilt reveal spot"><span class="ico" aria-hidden="true">⌘</span><h3>Analytics &amp; AI ops</h3>
+        <p>Turning data into decisions, and repetitive work into agents.</p>
+        <ul><li>Multi-touch attribution, campaign reporting</li><li>Claude agents, MCP, tool use</li><li>MBA thesis on AI in marketing</li></ul></article>
+    </div>
+  </div>
+</section>
+
+<section class="row" id="experience">
+  <div class="wrap">
+    <div class="rail"><div class="sticky">
+      <p class="eyebrow">Experience</p>
+      <h2>From intern to team lead</h2>
+      <p>Most recent first.</p>
+    </div></div>
+    <ol class="timeline">
+      <li class="job">
+        <div class="when">01/2026 to now<br><span class="now">● Current</span></div>
+        <div>
+          <h3>Working Student, Marketing Analytics &amp; Content</h3>
+          <p class="org">Hochschule Offenburg · Black Forest Business School · Germany</p>
+          <p class="gist">Marketing a German MBA programme to international applicants.</p>
+          <ul>
+            <li>Run LinkedIn content, including a faculty spotlight series.</li>
+            <li>Tune messaging across Meta, Google and LinkedIn for audiences across Europe and beyond.</li>
+            <li>Audited competitor school websites and delivered a content rewrite with UI/UX mock-ups.</li>
+          </ul>
+        </div>
+      </li>
+      <li class="job">
+        <div class="when">01/2024 to 07/2025</div>
+        <div>
+          <h3>Senior Account Manager, Team &amp; Client Servicing Lead</h3>
+          <p class="org">Illuminati Media · Remote</p>
+          <p class="gist">Ran high-budget influencer campaigns for HUL, Philips and Lakmé with a fully remote team.</p>
+          <ul>
+            <li>Led a 12-person team across planning, execution, reporting and optimisation.</li>
+            <li>Owned client communication with a P&amp;L view on every campaign.</li>
+            <li>Negotiated with creators to improve ROI and streamlined cross-team workflows to cut delays.</li>
+          </ul>
+        </div>
+      </li>
+      <li class="job">
+        <div class="when">06/2022 to 01/2024</div>
+        <div>
+          <h3>Manager, Influencer Marketing &amp; Client Servicing</h3>
+          <p class="org">Pollen (Zoo Media) · Mumbai · promoted from Senior Influencer Marketing Executive (06/2022 to 04/2023)</p>
+          <p class="gist">End-to-end influencer campaigns for Tata and other consumer brands.</p>
+          <ul>
+            <li>Managed creator communication, content approvals and timelines across several live campaigns.</li>
+            <li>Built performance reports on engagement, CPR, reach and conversion and used them to adjust strategy.</li>
+            <li>Aligned messaging, budgets and deliverables with strategy, design and finance.</li>
+          </ul>
+        </div>
+      </li>
+      <li class="job compact">
+        <div class="when">07/2021 to 06/2022</div>
+        <div><h3>Influencer Marketing Executive</h3><p class="org">White Rivers Media · Mumbai · creator coordination, content planning and reporting</p></div>
+      </li>
+      <li class="job compact">
+        <div class="when">11/2019 to 07/2022</div>
+        <div><h3>Founder</h3><p class="org">What's Next? · Mumbai · built and ran a trekking and travel startup, from budgets to marketing</p></div>
+      </li>
+      <li class="job compact">
+        <div class="when">01/2021 to 07/2021</div>
+        <div><h3>Social Media Marketing Executive</h3><p class="org">FashionTV India · Mumbai · content, scheduling and community engagement</p></div>
+      </li>
+      <li class="job compact">
+        <div class="when">06/2019 to 10/2019</div>
+        <div><h3>Social Media Marketing Intern</h3><p class="org">Playfree Sports India · first content and campaign work</p></div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="row" id="europe">
+  <div class="wrap">
+    <div class="rail"><div class="sticky">
+      <p class="eyebrow">Europe</p>
+      <h2>Already working in Germany</h2>
+      <p>I moved here to build the next chapter of my career, not to visit.</p>
+    </div></div>
+    <div class="eu-grid">
+      <div class="panel dark">
+        <h3>On the ground since 2025</h3>
+        <dl>
+          <div><dt>MBA, International Business Consulting</dt><dd>Hochschule Offenburg, graduating early 2027</dd></div>
+          <div><dt>Marketing role at a German business school</dt><dd>Campaigns and content for international audiences</dd></div>
+          <div><dt>Thesis on German companies</dt><dd>How they are reshaping marketing with AI</dd></div>
+          <div><dt>Rotaract Deutschland</dt><dd>Community events and student integration</dd></div>
+        </dl>
+      </div>
+      <div class="panel">
+        <h3>What I plan for in European markets</h3>
+        <dl>
+          <div><dt>Ad disclosure rules</dt><dd>Paid posts need clear labelling, and the rules differ by country. In Germany that means "Werbung" or "Anzeige".</dd></div>
+          <div><dt>Creator data under GDPR</dt><dd>Creator contact and performance data is personal data. It needs a lawful basis and careful storage.</dd></div>
+          <div><dt>Many markets, many languages</dt><dd>DACH, the Nordics and Southern Europe need their own creators, not one translated brief.</dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="row" id="builds">
+  <div class="wrap">
+    <div class="rail"><div class="sticky">
+      <p class="eyebrow">Work</p>
+      <h2>Things I've built</h2>
+      <p>Built by a marketer, not an engineer. Open source, with tests. Filter by discipline.</p>
+    </div></div>
+    <div>
+      <div class="seg chips" role="group" aria-label="Filter projects">
+        <button type="button" data-f="all" aria-pressed="true">All</button>
+        <button type="button" data-f="growth" aria-pressed="false">Growth</button>
+        <button type="button" data-f="performance" aria-pressed="false">Performance</button>
+        <button type="button" data-f="partnerships" aria-pressed="false">Partnerships</button>
+        <button type="button" data-f="clients" aria-pressed="false">Clients</button>
+        <button type="button" data-f="content" aria-pressed="false">Content</button>
+        <button type="button" data-f="ai" aria-pressed="false">AI</button>
+      </div>
+      <div class="builds" id="buildGrid">
+      <article class="build lead tilt spot" data-tags="ai">
+        <header><h3>Job Search Master Loop</h3><span class="status ">Running daily</span></header>
+        <p class="meta">AI agents · personal system · core open-sourced</p>
+        <p>An agent that runs twice a day: pulls fresh roles from company hiring systems, scores each against my CV with evidence, checks work-permit fit, then writes a tailored CV and cover letter for strong matches. A final check blocks AI-sounding text and confirms the PDF reads cleanly in applicant tracking systems.</p><div class="flow" aria-label="Pipeline steps"><span>Find roles</span><i>→</i><span>Score fit</span><i>→</i><span>Check visa</span><i>→</i><span>Tailor CV + letter</span><i>→</i><span>Lint + ATS check</span></div>
+        <ul class="stack"><li>Claude agents</li><li>Scheduled tasks</li><li>ATS APIs</li><li>Apollo</li><li>Crustdata</li><li>Python</li></ul>
+        <div class="links"><a class="gh" href="https://github.com/Vishwajeetkumbhar379/job-search-agent" target="_blank" rel="noopener">View code ↗</a></div>
+      </article>
+      <article class="build tilt spot" data-tags="growth">
+        <header><h3>Growth Experiment Lab</h3><span class="status live">Live app</span></header>
+        <p class="meta">Growth · web app</p>
+        <p>Reads an A/B test honestly (z-test, confidence interval, chance B beats A), plans how long a test must run, and ranks the idea backlog with ICE. Stats tested against textbook values.</p>
+        <ul class="stack"><li>JavaScript</li><li>Statistics</li><li>GitHub Pages</li></ul>
+        <div class="links"><a class="gh" href="https://vishwajeetkumbhar379.github.io/growth-experiment-lab/" target="_blank" rel="noopener">Try it live ↗</a><a class="gh" href="https://github.com/Vishwajeetkumbhar379/growth-experiment-lab" target="_blank" rel="noopener">View code ↗</a></div>
+      </article>
+      <article class="build tilt spot" data-tags="performance">
+        <header><h3>Ad Performance Copilot</h3><span class="status live">Built</span></header>
+        <p class="meta">Performance · paid media</p>
+        <p>Weekly review across Meta, Google and LinkedIn Ads: CPA, ROAS, frequency, creative fatigue, wasted spend and CPA spikes, plus a budget-shift plan that keeps total spend flat. Claude writes the client summary.</p>
+        <ul class="stack"><li>Python</li><li>Claude API</li></ul>
+        <div class="links"><a class="gh" href="https://github.com/Vishwajeetkumbhar379/ad-performance-copilot" target="_blank" rel="noopener">View code ↗</a></div>
+      </article>
+      <article class="build tilt spot" data-tags="growth performance">
+        <header><h3>Marketing Attribution Lab</h3><span class="status live">Built</span></header>
+        <p class="meta">Growth · analytics</p>
+        <p>Six attribution models side by side, including a data-driven Markov chain model. Shows which channels start journeys and which only close them, so budget stops following last-click.</p>
+        <ul class="stack"><li>Python</li><li>Markov chains</li></ul>
+        <div class="links"><a class="gh" href="https://github.com/Vishwajeetkumbhar379/marketing-attribution-lab" target="_blank" rel="noopener">View code ↗</a></div>
+      </article>
+      <article class="build tilt spot" data-tags="clients">
+        <header><h3>Client Health Score</h3><span class="status live">Built</span></header>
+        <p class="meta">Clients · account management</p>
+        <p>Scores every client account on results, relationship, delivery, payments and stakeholder changes. Flags churn risk and upsell signals with next actions, and drafts QBR outlines with Claude.</p>
+        <ul class="stack"><li>Python</li><li>Claude API · tool use</li></ul>
+        <div class="links"><a class="gh" href="https://github.com/Vishwajeetkumbhar379/client-health-score" target="_blank" rel="noopener">View code ↗</a></div>
+      </article>
+      <article class="build tilt spot" data-tags="partnerships">
+        <header><h3>Creator Fit Scorer</h3><span class="status live">Built</span></header>
+        <p class="meta">Partnerships · creator marketing</p>
+        <p>Ranks creators against a brand brief on audience, content, engagement health, cost and brand safety, with reasons for every score. Claude adds a second opinion and an outreach draft.</p>
+        <ul class="stack"><li>Python</li><li>Claude API · tool use</li></ul>
+        <div class="links"><a class="gh" href="https://github.com/Vishwajeetkumbhar379/creator-fit-scorer" target="_blank" rel="noopener">View code ↗</a></div>
+      </article>
+      <article class="build tilt spot" data-tags="partnerships clients">
+        <header><h3>Creator Contract Checker</h3><span class="status live">Built</span></header>
+        <p class="meta">Partnerships · contracts</p>
+        <p>Flags the clauses that cost money in influencer agreements: perpetual usage, broad exclusivity, 90-day payment, no ad-disclosure clause. Suggests fair wording and drafts the negotiation email. Comes with a labelled eval set.</p>
+        <ul class="stack"><li>Python</li><li>Claude API</li><li>Evals</li></ul>
+        <div class="links"><a class="gh" href="https://github.com/Vishwajeetkumbhar379/creator-contract-checker" target="_blank" rel="noopener">View code ↗</a></div>
+      </article>
+      <article class="build tilt spot" data-tags="clients partnerships">
+        <header><h3>Campaign Report Autopilot</h3><span class="status live">Built</span></header>
+        <p class="meta">Clients · reporting automation</p>
+        <p>A GitHub Action that builds the client report every Monday with a scale / keep / test / cut call per creator. Claude writes the summary from the computed numbers only.</p>
+        <ul class="stack"><li>Python</li><li>GitHub Actions</li><li>Claude API</li></ul>
+        <div class="links"><a class="gh" href="https://github.com/Vishwajeetkumbhar379/campaign-report-autopilot" target="_blank" rel="noopener">View code ↗</a></div>
+      </article>
+      <article class="build tilt spot" data-tags="ai partnerships">
+        <header><h3>Creator Brief MCP server</h3><span class="status live">Built</span></header>
+        <p class="meta">AI infrastructure</p>
+        <p>Connects Claude to marketing tools: campaign maths, engagement checks, creator briefs and ad-disclosure checks per market (Germany needs "Werbung" or "Anzeige").</p>
+        <ul class="stack"><li>Model Context Protocol</li><li>Python</li></ul>
+        <div class="links"><a class="gh" href="https://github.com/Vishwajeetkumbhar379/creator-brief-mcp" target="_blank" rel="noopener">View code ↗</a></div>
+      </article>
+      <article class="build tilt spot" data-tags="content">
+        <header><h3>LinkedIn Carousel Studio</h3><span class="status live">Built</span></header>
+        <p class="meta">Content</p>
+        <p>Outline in, on-brand carousel out: PNG slides and a LinkedIn-ready PDF in one locked visual style, with editorial rules in code and optional Claude drafting.</p>
+        <ul class="stack"><li>Python</li><li>Playwright</li><li>Claude API</li></ul>
+        <div class="links"><a class="gh" href="https://github.com/Vishwajeetkumbhar379/linkedin-carousel-studio" target="_blank" rel="noopener">View code ↗</a></div>
+      </article>
+      <article class="build tilt spot" data-tags="ai content">
+        <header><h3>Claude Skills</h3><span class="status live">Built</span></header>
+        <p class="meta">AI workflows</p>
+        <p>Seven Agent Skills behind my work: job scouting, applications, a humanizer for AI-sounding text, carousels, creator shortlists and contract review.</p>
+        <ul class="stack"><li>Claude Agent Skills</li></ul>
+        <div class="links"><a class="gh" href="https://github.com/Vishwajeetkumbhar379/claude-skills" target="_blank" rel="noopener">View code ↗</a></div>
+      </article>
+      <article class="build tilt spot" data-tags="ai">
+        <header><h3>Master's thesis</h3><span class="status wip">In progress</span></header>
+        <p class="meta">2026 to 2027 · Hochschule Offenburg</p>
+        <p>How AI-powered marketing automation affects the work of marketing professionals in Germany: a survey-based study.</p>
+        <ul class="stack"><li>MBA thesis</li><li>AI in marketing</li></ul>
+        
+      </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="row" id="education">
+  <div class="wrap">
+    <div class="rail"><div class="sticky">
+      <p class="eyebrow">Background</p>
+      <h2>Education and more</h2>
+    </div></div>
+    <div class="edu">
+      <div>
+        <h3>Education</h3>
+        <dl>
+          <div><dt>MBA, International Business Consulting</dt><dd>Hochschule Offenburg, Germany · 10/2025 to early 2027</dd></div>
+          <div><dt>Bachelor of Mass Media, Journalism &amp; Advertising</dt><dd>Pillai College, University of Mumbai · 2017 to 2020</dd></div>
+        </dl>
+      </div>
+      <div>
+        <h3>Certifications</h3>
+        <dl>
+          <div><dt>PG Programme, Advanced Digital Marketing &amp; Communication</dt><dd>MICA × upGrad · 2021 to 2022</dd></div>
+          <div><dt>Full Stack Digital Marketing Program</dt><dd>2021 · SEO, SEM, performance marketing, content strategy</dd></div>
+        </dl>
+      </div>
+      <div>
+        <h3>Languages</h3>
+        <dl>
+          <div><dt>English</dt><dd>Fluent, working language</dd></div>
+          <div><dt>Hindi · Marathi</dt><dd>Native</dd></div>
+          <div><dt>German</dt><dd>B1, learning</dd></div>
+        </dl>
+      </div>
+      <div>
+        <h3>Volunteering</h3>
+        <dl>
+          <div><dt>Rotaract Deutschland</dt><dd>2025 to now · community events, intercultural activities, volunteer coordination</dd></div>
+          <div><dt>Rotaract Club of Mumbai</dt><dd>2022 to 2024 · blood drives, food distribution, fundraising for children's healthcare and education</dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="row" id="cv">
+  <div class="wrap">
+    <div class="rail"><div class="sticky">
+      <p class="eyebrow">CV</p>
+      <h2>My CV, two pages</h2>
+      <p>Everything on this page in a recruiter-friendly format. Readable by applicant tracking systems. Updated October 2026.</p>
+    </div></div>
+    <div class="cvbox">
+      <div class="cvtabs" role="tablist" aria-label="CV pages">
+        <button type="button" role="tab" id="cvTab1" aria-selected="true">Page 1 · Experience</button>
+        <button type="button" role="tab" id="cvTab2" aria-selected="false">Page 2 · AI projects</button>
+      </div>
+      <div class="cvpages" id="cvPages">
+        <figure class="cvpage spot" data-p="1"><img src="cv-1.jpg" alt="CV page 1: profile, skills, work experience and education" loading="lazy" width="1240" height="1754"><figcaption>Page 1 · tap to zoom</figcaption></figure>
+        <figure class="cvpage spot" data-p="2"><img src="cv-2.jpg" alt="CV page 2: AI projects, strengths, certifications and volunteering" loading="lazy" width="1240" height="1754"><figcaption>Page 2 · tap to zoom</figcaption></figure>
+      </div>
+      <div class="cvactions">
+        <a class="btn primary magnet" href="/Vishwajeet_Kumbhar_CV.pdf" download>Download PDF ↓</a>
+        <a class="btn" href="https://github.com/Vishwajeetkumbhar379/Vishwajeetkumbhar379/blob/main/Vishwajeet_Kumbhar_CV.pdf" target="_blank" rel="noopener">View on GitHub ↗</a>
+        <span class="cvmeta">2 pages · A4 · ATS-friendly</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="CV page, zoomed">
+  <button type="button" class="lb-close" id="lbClose" aria-label="Close">×</button>
+  <img id="lbImg" alt="">
+</div>
+
+<footer class="contact" id="contact">
+  <div class="wrap">
+    <p class="eyebrow">Contact</p>
+    <h2>Hiring for growth, performance or <em>partnerships?</em></h2>
+    <p>Remote roles first, Berlin welcome. I'm looking for teams where marketing craft and AI fluency both count. Email is the fastest way to reach me.</p>
+    <ul class="roles" aria-label="Roles I'm open to">
+      <li>Growth Marketing</li><li>Performance Marketing</li><li>Digital Marketing</li><li>Brand &amp; Creator Partnerships</li><li>Account &amp; Client Management</li><li>Customer Success</li><li>Marketing Ops &amp; AI</li>
+    </ul>
+    <div class="mailrow">
+      <span class="addr" id="addr">vishwajeetkumbhar379@gmail.com</span>
+      <button class="btn primary" id="copy" type="button">Copy email</button>
+    </div>
+    <div class="ctas"><a class="btn" href="/Vishwajeet_Kumbhar_CV.pdf" target="_blank" rel="noopener">CV (PDF) ↗</a><a class="btn" href="https://www.linkedin.com/in/vishwajeetkumbhar379" target="_blank" rel="noopener">LinkedIn ↗</a><a class="btn" href="https://github.com/Vishwajeetkumbhar379" target="_blank" rel="noopener">GitHub ↗</a></div>
+    <div class="foot"><span>Vishwajeet Kumbhar · Germany</span><span>Updated October 2026</span></div>
+  </div>
+</footer>
+
+<div class="pal-back" id="palBack" hidden>
+  <div class="pal" role="dialog" aria-modal="true" aria-label="Quick menu">
+    <input id="palIn" type="text" placeholder="Jump to a section or run an action…" autocomplete="off" aria-label="Search actions">
+    <ul id="palList" role="listbox"></ul>
+    <div class="foothint">↑ ↓ to move · Enter to open · Esc to close</div>
+  </div>
+</div>
+<div class="toast" id="toast" hidden role="status"></div>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var $ = function (id) { return document.getElementById(id); };
+  function tok(n) { return getComputedStyle(root).getPropertyValue(n).trim(); }
+
+  /* toast */
+  var toastT;
+  function toast(msg) { var t = $('toast'); t.textContent = msg; t.hidden = false; clearTimeout(toastT); toastT = setTimeout(function () { t.hidden = true; }, 1800); }
+
+  /* copy email */
+  function copyEmail(btn) {
+    var el = $('addr'), text = el.textContent;
+    function sel() { var r = document.createRange(); r.selectNodeContents(el); var s = window.getSelection(); s.removeAllRanges(); s.addRange(r); el.scrollIntoView({ block: 'center', behavior: reduce ? 'auto' : 'smooth' }); toast('Email selected, press copy'); }
+    try { navigator.clipboard.writeText(text).then(function () { toast('Email copied'); if (btn) { btn.textContent = 'Copied'; setTimeout(function () { btn.textContent = 'Copy email'; }, 1800); } }, sel); } catch (e) { sel(); }
+  }
+  $('copy').addEventListener('click', function () { copyEmail(this); });
+
+  /* theme toggle (remembered per visitor) */
+  function isDark() { var a = root.getAttribute('data-theme'); return a ? a === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches; }
+  try { var saved = localStorage.getItem('vk-theme'); if (saved) root.setAttribute('data-theme', saved); } catch (e) {}
+  function themeUi() { var d = isDark(); root.classList.toggle('is-dark', d); var l = $('themeLbl'); if (l) l.textContent = d ? (lang === 'de' ? 'Tag' : 'Day') : (lang === 'de' ? 'Nacht' : 'Night'); }
+  function toggleTheme() { var next = isDark() ? 'light' : 'dark'; root.classList.add('theming'); root.setAttribute('data-theme', next); try { localStorage.setItem('vk-theme', next); } catch (e) {} themeUi(); setTimeout(function () { root.classList.remove('theming'); }, 600); toast(next === 'dark' ? (lang === 'de' ? 'Nachtmodus' : 'Night mode') : (lang === 'de' ? 'Tagmodus' : 'Day mode')); }
+  try { matchMedia('(prefers-color-scheme: dark)').addEventListener('change', themeUi); } catch (e) {}
+  $('themeBtn').addEventListener('click', toggleTheme);
+  var I18N = {"Brands": "Marken", "Playbook": "Playbook", "Experience": "Erfahrung", "Work": "Projekte", "Contact": "Kontakt", "Digital marketing · Growth · Partnerships · AI": "Digitales Marketing · Growth · Partnerships · KI", "<span class=\"pulse\" aria-hidden=\"true\"></span>Open to remote roles · <span id=\"localTime\">--:--</span> in Germany": "<span class=\"pulse\" aria-hidden=\"true\"></span>Offen für Remote-Stellen · <span id=\"localTime\">--:--</span> in Deutschland", "I grow brands with <em>creators, campaigns</em> and AI.": "Ich lasse Marken wachsen – mit <em>Creators, Kampagnen</em> und KI.", "Five years across creator partnerships, paid and organic social, client leadership and campaign reporting, for brands like HUL (Unilever), Philips, L'Oréal and Tata. Now in Germany, I build AI tools that make marketing teams faster.": "Fünf Jahre Erfahrung in Creator-Partnerships, Paid und Organic Social, Kundenführung und Kampagnen-Reporting – für Marken wie HUL (Unilever), Philips, L'Oréal und Tata. Heute in Deutschland, wo ich KI-Tools baue, die Marketing-Teams schneller machen.", "Remote-first · based in Germany": "Remote-first · wohnhaft in Deutschland", "Berlin from Dec 2026": "Berlin ab Dez. 2026", "English-first teams": "Englischsprachige Teams", "Get in touch": "Kontakt aufnehmen", "View CV": "Lebenslauf ansehen", "<span class=\"ring\"></span>Click to reveal brands · scroll to zoom · drag to spin": "<span class=\"ring\"></span>Klicken für Marken · scrollen zum Zoomen · ziehen zum Drehen", "creator deals across 9 global brands": "Creator-Deals für 9 globale Marken", "years in creator and brand marketing": "Jahre in Creator- und Markenmarketing", "creators managed across campaigns": "Creators in Kampagnen betreut", "people in the team I led": "Personen in meinem Team", "global and national brands": "globale und nationale Marken", "agencies, Mumbai and remote": "Agenturen, Mumbai und remote", "One marketer, five jobs": "Ein Marketer, fünf Disziplinen", "Experiments, funnels and lifecycle, measured properly.": "Experimente, Funnels und Lifecycle – sauber gemessen.", "Meta, Google and LinkedIn Ads, judged on CPA and ROAS.": "Meta, Google und LinkedIn Ads, bewertet nach CPA und ROAS.", "850+ creator deals for global consumer brands.": "850+ Creator-Deals für globale Konsumgütermarken.", "Clients.": "Kunden.", "A 12-person team and 20+ brand accounts, led end to end.": "Ein 12-köpfiges Team und 20+ Marken-Accounts, von A bis Z geführt.", "Agents, MCP servers and Claude workflows I build myself.": "Agents, MCP-Server und Claude-Workflows, die ich selbst baue.", "Roster": "Kunden", "Brands I've run creator work for": "Marken, für die ich Creator-Kampagnen umgesetzt habe", "Delivered through agency teams at Illuminati Media, Pollen (Zoo Media) and White Rivers Media.": "Umgesetzt mit Agenturteams bei Illuminati Media, Pollen (Zoo Media) und White Rivers Media.", "All 9 brands": "Alle 9 Marken", "European groups only": "Nur europäische Konzerne", "Brand": "Marke", "Category": "Kategorie", "Parent group": "Mutterkonzern", "Unilever · UK<span class=\"eu\">Europe HQ</span>": "Unilever · UK<span class=\"eu\">Sitz in Europa</span>", "Personal care, electronics": "Körperpflege, Elektronik", "Philips · Netherlands<span class=\"eu\">Europe HQ</span>": "Philips · Niederlande<span class=\"eu\">Sitz in Europa</span>", "Beauty": "Beauty", "L'Oréal · France<span class=\"eu\">Europe HQ</span>": "L'Oréal · Frankreich<span class=\"eu\">Sitz in Europa</span>", "Consumer brands": "Konsumgüter", "Tata Group · India": "Tata Group · Indien", "Consumer app": "Consumer-App", "Bumble · US": "Bumble · USA", "Footwear, streetwear": "Schuhe, Streetwear", "VF Corp · US": "VF Corp · USA", "Entertainment": "Unterhaltung", "NBCUniversal · US": "NBCUniversal · USA", "Fashion": "Mode", "Raymond · India": "Raymond · Indien", "Four of these nine brands belong to European groups. I'm used to global brand guidelines, multi-step client approvals and reporting that has to travel up to a regional team.": "Vier dieser neun Marken gehören zu europäischen Konzernen. Ich kenne globale Markenrichtlinien, mehrstufige Freigaben und Reportings, die bis zum Regionalteam hochgehen.", "How I run a creator program": "So führe ich ein Creator-Programm", "The same five stages, whether it's 10 creators or 100, in any market.": "Immer dieselben fünf Schritte – ob 10 Creators oder 100, in jedem Markt.", "Brief and goal": "Briefing und Ziel", "Turn the brand ask into one measurable goal, an audience and a budget per creator tier.": "Aus der Anfrage der Marke wird ein messbares Ziel, eine Zielgruppe und ein Budget pro Creator-Stufe.", "Objective": "Ziel", "Creator selection": "Creator-Auswahl", "Shortlist on audience fit, past content and engagement quality, not follower count alone.": "Shortlist nach Zielgruppen-Fit, bisherigen Inhalten und Engagement-Qualität – nicht nur nach Followern.", "Negotiation": "Verhandlung", "Agree rates, deliverables, usage rights and timelines that protect both sides.": "Honorare, Leistungen, Nutzungsrechte und Zeitpläne vereinbaren, die beide Seiten schützen.", "Rate": "Honorar", "Rights": "Rechte", "Content and approvals": "Content und Freigaben", "Brief creators, manage drafts and brand approvals, keep every post on schedule.": "Creators briefen, Entwürfe und Markenfreigaben steuern, jeden Post pünktlich live bringen.", "On-time": "Pünktlich", "Report and optimise": "Reporting und Optimierung", "Report what moved, then reallocate budget to the creators and formats that worked.": "Zeigen, was gewirkt hat, und Budget zu den Creators und Formaten verschieben, die funktionieren.", "Reach": "Reichweite", "Run the numbers": "Rechnen Sie selbst", "The quick math I do before pitching a creator plan. Drag to try it.": "Die schnelle Rechnung, die ich vor jedem Creator-Pitch mache. Einfach die Regler ziehen.", "Total reach": "Gesamtreichweite", "Engagements": "Interaktionen", "Cost per 1,000 reached": "Kosten pro 1.000 Reichweite", "Cost per engagement": "Kosten pro Interaktion", "Budget per creator": "Budget pro Creator", "Plan check": "Plan-Check", "Illustrative only. Real benchmarks depend on platform, market and creator tier.": "Nur zur Veranschaulichung. Echte Benchmarks hängen von Plattform, Markt und Creator-Stufe ab.", "Strengths": "Stärken", "What I'm hired for": "Wofür man mich einstellt", "Strongest in creator partnerships and client leadership, with hands-on growth, paid media and AI skills around them.": "Am stärksten in Creator-Partnerships und Kundenführung – dazu praktische Skills in Growth, Paid Media und KI.", "Growth marketing": "Growth Marketing", "Funnels, experiments and lifecycle, with the maths done properly.": "Funnels, Experimente und Lifecycle, mit sauberer Mathematik.", "A/B test design and reading": "A/B-Tests planen und auswerten", "ICE prioritisation, funnel metrics": "ICE-Priorisierung, Funnel-Kennzahlen", "Built a growth experiment toolkit": "Eigenes Growth-Experiment-Toolkit gebaut", "Performance marketing": "Performance Marketing", "Paid social and search, judged on cost per result.": "Paid Social und Search, bewertet nach Kosten pro Ergebnis.", "Meta, Google and LinkedIn Ads for international audiences": "Meta, Google und LinkedIn Ads für internationale Zielgruppen", "Certified in paid ads, SEO and SEM": "Zertifiziert in Paid Ads, SEO und SEM", "Built a paid-media review copilot": "Eigenen Paid-Media-Review-Copilot gebaut", "Creator &amp; brand partnerships": "Creator- &amp; Brand-Partnerships", "From shortlist to signed post, at scale.": "Von der Shortlist bis zum veröffentlichten Post, in großem Umfang.", "850+ creators across lifestyle and FMCG": "850+ Creators in Lifestyle und FMCG", "Negotiation, briefs, approvals": "Verhandlung, Briefings, Freigaben", "Reach, engagement, CPR, conversion reporting": "Reporting zu Reichweite, Engagement, CPR, Conversion", "Client &amp; account management": "Kunden- &amp; Account-Management", "Owning the relationship and the team that delivers it.": "Verantwortung für die Kundenbeziehung und das Team, das liefert.", "Led a 12-person team, 20+ brand accounts": "12-köpfiges Team geführt, 20+ Marken-Accounts", "P&amp;L view, cross-sell and upsell": "GuV-Blick, Cross- und Upselling", "Built a client health scoring tool": "Eigenes Client-Health-Scoring-Tool gebaut", "Content &amp; social": "Content &amp; Social", "Content that people save, share and act on.": "Content, den Menschen speichern, teilen und nutzen.", "LinkedIn content for a business school": "LinkedIn-Content für eine Business School", "Instagram and YouTube campaigns": "Instagram- und YouTube-Kampagnen", "Built a carousel production system": "Eigenes System zur Karussell-Produktion gebaut", "Analytics &amp; AI ops": "Analytics &amp; KI-Ops", "Turning data into decisions, and repetitive work into agents.": "Aus Daten werden Entscheidungen, aus Routinearbeit Agents.", "Multi-touch attribution, campaign reporting": "Multi-Touch-Attribution, Kampagnen-Reporting", "Claude agents, MCP, tool use": "Claude Agents, MCP, Tool Use", "MBA thesis on AI in marketing": "MBA-Thesis über KI im Marketing", "From intern to team lead": "Vom Praktikanten zum Teamleiter", "Most recent first.": "Neueste zuerst.", "01/2026 to now<br><span class=\"now\">● Current</span>": "01/2026 bis heute<br><span class=\"now\">● Aktuell</span>", "Working Student, Marketing Analytics &amp; Content": "Werkstudent, Marketing Analytics &amp; Content", "Hochschule Offenburg · Black Forest Business School · Germany": "Hochschule Offenburg · Black Forest Business School · Deutschland", "Marketing a German MBA programme to international applicants.": "Vermarktung eines deutschen MBA-Programms an internationale Bewerber.", "Run LinkedIn content, including a faculty spotlight series.": "Verantwortlich für LinkedIn-Content, inklusive einer Serie mit Professorenporträts.", "Tune messaging across Meta, Google and LinkedIn for audiences across Europe and beyond.": "Optimierung der Botschaften auf Meta, Google und LinkedIn für Zielgruppen in Europa und weltweit.", "Audited competitor school websites and delivered a content rewrite with UI/UX mock-ups.": "Websites von Wettbewerbern analysiert und eine Content-Überarbeitung mit UI/UX-Mock-ups geliefert.", "Senior Account Manager, Team &amp; Client Servicing Lead": "Senior Account Manager, Team- &amp; Client-Servicing-Lead", "Ran high-budget influencer campaigns for HUL, Philips and Lakmé with a fully remote team.": "Influencer-Kampagnen mit hohem Budget für HUL, Philips und Lakmé mit einem vollständig remote arbeitenden Team.", "Led a 12-person team across planning, execution, reporting and optimisation.": "12-köpfiges Team durch Planung, Umsetzung, Reporting und Optimierung geführt.", "Owned client communication with a P&amp;L view on every campaign.": "Kundenkommunikation verantwortet, mit GuV-Blick auf jede Kampagne.", "Negotiated with creators to improve ROI and streamlined cross-team workflows to cut delays.": "Mit Creators verhandelt, um den ROI zu steigern, und teamübergreifende Abläufe gestrafft, um Verzögerungen zu reduzieren.", "Manager, Influencer Marketing &amp; Client Servicing": "Manager, Influencer Marketing &amp; Client Servicing", "Pollen (Zoo Media) · Mumbai · promoted from Senior Influencer Marketing Executive (06/2022 to 04/2023)": "Pollen (Zoo Media) · Mumbai · befördert vom Senior Influencer Marketing Executive (06/2022 bis 04/2023)", "End-to-end influencer campaigns for Tata and other consumer brands.": "Influencer-Kampagnen von A bis Z für Tata und weitere Konsumgütermarken.", "Managed creator communication, content approvals and timelines across several live campaigns.": "Creator-Kommunikation, Content-Freigaben und Zeitpläne über mehrere laufende Kampagnen gesteuert.", "Built performance reports on engagement, CPR, reach and conversion and used them to adjust strategy.": "Performance-Reports zu Engagement, CPR, Reichweite und Conversion erstellt und daraus die Strategie angepasst.", "Aligned messaging, budgets and deliverables with strategy, design and finance.": "Botschaften, Budgets und Leistungen mit Strategie, Design und Finance abgestimmt.", "White Rivers Media · Mumbai · creator coordination, content planning and reporting": "White Rivers Media · Mumbai · Creator-Koordination, Content-Planung und Reporting", "Founder": "Gründer", "What's Next? · Mumbai · built and ran a trekking and travel startup, from budgets to marketing": "What's Next? · Mumbai · Trekking- und Reise-Startup aufgebaut und geführt, von Budget bis Marketing", "FashionTV India · Mumbai · content, scheduling and community engagement": "FashionTV India · Mumbai · Content, Planung und Community-Engagement", "Social Media Marketing Intern": "Social Media Marketing Praktikant", "Playfree Sports India · first content and campaign work": "Playfree Sports India · erste Content- und Kampagnenarbeit", "Europe": "Europa", "Already working in Germany": "Ich arbeite bereits in Deutschland", "I moved here to build the next chapter of my career, not to visit.": "Ich bin hergekommen, um das nächste Kapitel meiner Karriere zu schreiben – nicht zu Besuch.", "On the ground since 2025": "Vor Ort seit 2025", "MBA, International Business Consulting": "MBA, International Business Consulting", "Hochschule Offenburg, graduating early 2027": "Hochschule Offenburg, Abschluss Anfang 2027", "Marketing role at a German business school": "Marketing-Rolle an einer deutschen Business School", "Campaigns and content for international audiences": "Kampagnen und Content für internationale Zielgruppen", "Thesis on German companies": "Thesis über deutsche Unternehmen", "How they are reshaping marketing with AI": "Wie sie ihr Marketing mit KI neu aufstellen", "Community events and student integration": "Community-Events und Integration von Studierenden", "What I plan for in European markets": "Worauf ich in europäischen Märkten achte", "Ad disclosure rules": "Kennzeichnung von Werbung", "Paid posts need clear labelling, and the rules differ by country. In Germany that means \"Werbung\" or \"Anzeige\".": "Bezahlte Posts brauchen eine klare Kennzeichnung, und die Regeln unterscheiden sich je Land. In Deutschland heißt das „Werbung“ oder „Anzeige“.", "Creator data under GDPR": "Creator-Daten und DSGVO", "Creator contact and performance data is personal data. It needs a lawful basis and careful storage.": "Kontakt- und Performance-Daten von Creators sind personenbezogene Daten. Sie brauchen eine Rechtsgrundlage und sorgfältige Speicherung.", "Many markets, many languages": "Viele Märkte, viele Sprachen", "DACH, the Nordics and Southern Europe need their own creators, not one translated brief.": "DACH, Skandinavien und Südeuropa brauchen eigene Creators – nicht ein übersetztes Briefing.", "Things I've built": "Was ich gebaut habe", "Built by a marketer, not an engineer. Open source, with tests. Filter by discipline.": "Gebaut von einem Marketer, nicht von einem Entwickler. Open Source, mit Tests. Nach Disziplin filtern.", "All": "Alle", "Clients": "Kunden", "Running daily": "Läuft täglich", "AI agents · personal system · core open-sourced": "KI-Agents · eigenes System · Kern als Open Source", "An agent that runs twice a day: pulls fresh roles from company hiring systems, scores each against my CV with evidence, checks work-permit fit, then writes a tailored CV and cover letter for strong matches. A final check blocks AI-sounding text and confirms the PDF reads cleanly in applicant tracking systems.": "Ein Agent, der zweimal täglich läuft: Er holt neue Stellen direkt aus den Bewerbungssystemen der Unternehmen, bewertet jede mit Belegen gegen meinen Lebenslauf, prüft die Arbeitserlaubnis und erstellt für starke Treffer einen zugeschnittenen Lebenslauf samt Anschreiben. Ein letzter Check entfernt KI-typische Formulierungen und prüft, dass das PDF in Bewerbermanagementsystemen sauber lesbar ist.", "View code ↗": "Code ansehen ↗", "Live app": "Live-App", "Growth · web app": "Growth · Web-App", "Reads an A/B test honestly (z-test, confidence interval, chance B beats A), plans how long a test must run, and ranks the idea backlog with ICE. Stats tested against textbook values.": "Wertet A/B-Tests korrekt aus (z-Test, Konfidenzintervall, Wahrscheinlichkeit dass B gewinnt), plant die nötige Testdauer und priorisiert Ideen mit ICE. Statistik gegen Lehrbuchwerte getestet.", "Try it live ↗": "Live ausprobieren ↗", "Built": "Fertig", "Performance · paid media": "Performance · Paid Media", "Weekly review across Meta, Google and LinkedIn Ads: CPA, ROAS, frequency, creative fatigue, wasted spend and CPA spikes, plus a budget-shift plan that keeps total spend flat. Claude writes the client summary.": "Wöchentliches Review über Meta, Google und LinkedIn Ads: CPA, ROAS, Frequenz, Creative Fatigue, verschwendetes Budget und CPA-Sprünge – plus ein Plan zur Budgetverschiebung bei gleichem Gesamtbudget. Claude schreibt die Zusammenfassung für den Kunden.", "Growth · analytics": "Growth · Analytics", "Six attribution models side by side, including a data-driven Markov chain model. Shows which channels start journeys and which only close them, so budget stops following last-click.": "Sechs Attributionsmodelle im Vergleich, darunter ein datengetriebenes Markov-Modell. Zeigt, welche Kanäle Customer Journeys starten und welche sie nur abschließen – damit das Budget nicht mehr dem Last Click folgt.", "Clients · account management": "Kunden · Account-Management", "Scores every client account on results, relationship, delivery, payments and stakeholder changes. Flags churn risk and upsell signals with next actions, and drafts QBR outlines with Claude.": "Bewertet jeden Kunden-Account nach Ergebnissen, Beziehung, Lieferung, Zahlungen und Wechseln bei Ansprechpartnern. Markiert Abwanderungsrisiken und Upsell-Chancen mit nächsten Schritten und entwirft QBRs mit Claude.", "Partnerships · creator marketing": "Partnerships · Creator-Marketing", "Ranks creators against a brand brief on audience, content, engagement health, cost and brand safety, with reasons for every score. Claude adds a second opinion and an outreach draft.": "Rankt Creators gegen ein Marken-Briefing nach Zielgruppe, Content, Engagement-Qualität, Kosten und Brand Safety – mit Begründung für jeden Wert. Claude ergänzt eine zweite Meinung und einen Entwurf für die Ansprache.", "Partnerships · contracts": "Partnerships · Verträge", "Flags the clauses that cost money in influencer agreements: perpetual usage, broad exclusivity, 90-day payment, no ad-disclosure clause. Suggests fair wording and drafts the negotiation email. Comes with a labelled eval set.": "Findet die Klauseln in Influencer-Verträgen, die Geld kosten: unbefristete Nutzung, breite Exklusivität, 90 Tage Zahlungsziel, keine Werbekennzeichnung. Schlägt faire Formulierungen vor und entwirft die Verhandlungs-E-Mail. Mit gelabeltem Eval-Set.", "Clients · reporting automation": "Kunden · Reporting-Automatisierung", "A GitHub Action that builds the client report every Monday with a scale / keep / test / cut call per creator. Claude writes the summary from the computed numbers only.": "Eine GitHub Action, die jeden Montag den Kundenreport erstellt – mit einer Empfehlung pro Creator: skalieren, halten, testen oder stoppen. Claude schreibt die Zusammenfassung nur aus den berechneten Zahlen.", "Creator Brief MCP server": "Creator Brief MCP-Server", "AI infrastructure": "KI-Infrastruktur", "Connects Claude to marketing tools: campaign maths, engagement checks, creator briefs and ad-disclosure checks per market (Germany needs \"Werbung\" or \"Anzeige\").": "Verbindet Claude mit Marketing-Tools: Kampagnenrechnung, Engagement-Checks, Creator-Briefings und Prüfung der Werbekennzeichnung je Markt (Deutschland verlangt „Werbung“ oder „Anzeige“).", "Outline in, on-brand carousel out: PNG slides and a LinkedIn-ready PDF in one locked visual style, with editorial rules in code and optional Claude drafting.": "Gliederung rein, markenkonformes Karussell raus: PNG-Slides und ein LinkedIn-fertiges PDF in einem festen Stil – mit Redaktionsregeln im Code und optionalem Entwurf durch Claude.", "AI workflows": "KI-Workflows", "Seven Agent Skills behind my work: job scouting, applications, a humanizer for AI-sounding text, carousels, creator shortlists and contract review.": "Sieben Agent Skills hinter meiner Arbeit: Jobsuche, Bewerbungen, ein Humanizer gegen KI-typische Texte, Karussells, Creator-Shortlists und Vertragsprüfung.", "Master's thesis": "Masterarbeit", "In progress": "In Arbeit", "2026 to 2027 · Hochschule Offenburg": "2026 bis 2027 · Hochschule Offenburg", "How AI-powered marketing automation affects the work of marketing professionals in Germany: a survey-based study.": "Wie KI-gestützte Marketing-Automatisierung die Arbeit von Marketing-Fachkräften in Deutschland verändert: eine Studie auf Basis einer Umfrage.", "Background": "Hintergrund", "Education and more": "Ausbildung und mehr", "Education": "Ausbildung", "Hochschule Offenburg, Germany · 10/2025 to early 2027": "Hochschule Offenburg, Deutschland · 10/2025 bis Anfang 2027", "Bachelor of Mass Media, Journalism &amp; Advertising": "Bachelor of Mass Media, Journalismus &amp; Werbung", "Pillai College, University of Mumbai · 2017 to 2020": "Pillai College, University of Mumbai · 2017 bis 2020", "Certifications": "Zertifikate", "PG Programme, Advanced Digital Marketing &amp; Communication": "PG-Programm, Advanced Digital Marketing &amp; Communication", "MICA × upGrad · 2021 to 2022": "MICA × upGrad · 2021 bis 2022", "Full Stack Digital Marketing Program": "Full Stack Digital Marketing Programm", "2021 · SEO, SEM, performance marketing, content strategy": "2021 · SEO, SEM, Performance Marketing, Content-Strategie", "Languages": "Sprachen", "English": "Englisch", "Fluent, working language": "Fließend, Arbeitssprache", "Native": "Muttersprache", "German": "Deutsch", "B1, learning": "B1, in Ausbildung", "Volunteering": "Ehrenamt", "2025 to now · community events, intercultural activities, volunteer coordination": "2025 bis heute · Community-Events, interkulturelle Aktivitäten, Koordination von Freiwilligen", "2022 to 2024 · blood drives, food distribution, fundraising for children's healthcare and education": "2022 bis 2024 · Blutspendeaktionen, Essensausgabe, Spendensammlung für Gesundheit und Bildung von Kindern", "My CV, two pages": "Mein Lebenslauf, zwei Seiten", "Everything on this page in a recruiter-friendly format. Readable by applicant tracking systems. Updated October 2026.": "Alles von dieser Seite im recruiterfreundlichen Format. Lesbar für Bewerbermanagementsysteme. Stand: Oktober 2026.", "Page 1 · Experience": "Seite 1 · Erfahrung", "Page 2 · AI projects": "Seite 2 · KI-Projekte", "Page 1 · tap to zoom": "Seite 1 · tippen zum Zoomen", "Page 2 · tap to zoom": "Seite 2 · tippen zum Zoomen", "Download PDF ↓": "PDF herunterladen ↗", "View on GitHub ↗": "Auf GitHub ansehen ↗", "2 pages · A4 · ATS-friendly": "2 Seiten · A4 · ATS-freundlich (Englisch)", "Hiring for growth, performance or <em>partnerships?</em>": "Sie suchen jemanden für Growth, Performance oder <em>Partnerships?</em>", "Remote roles first, Berlin welcome. I'm looking for teams where marketing craft and AI fluency both count. Email is the fastest way to reach me.": "Remote-Stellen bevorzugt, Berlin gern. Ich suche Teams, in denen Marketing-Handwerk und KI-Kompetenz beide zählen. Am schnellsten erreichen Sie mich per E-Mail.", "Brand &amp; Creator Partnerships": "Brand- &amp; Creator-Partnerships", "Account &amp; Client Management": "Account- &amp; Kundenmanagement", "Marketing Ops &amp; AI": "Marketing Ops &amp; KI", "Copy email": "E-Mail kopieren", "CV (PDF) ↗": "Lebenslauf (PDF) ↗", "Vishwajeet Kumbhar · Germany": "Vishwajeet Kumbhar · Deutschland", "Updated October 2026": "Stand: Oktober 2026"};
+  var lang = 'en', i18nNodes = null;
+  function collectI18n() {
+    i18nNodes = [];
+    document.querySelectorAll('body *').forEach(function (el) {
+      if (el.closest('script,style,svg,canvas,#palBack')) return;
+      var h = el.innerHTML.trim().replace(/<span id="localTime">[^<]*<\/span>/, '<span id="localTime">--:--</span>');
+      if (Object.prototype.hasOwnProperty.call(I18N, h)) i18nNodes.push([el, h]);
+    });
+  }
+  function setLang(l, quiet) {
+    if (!i18nNodes) collectI18n();
+    lang = l === 'de' ? 'de' : 'en';
+    root.setAttribute('lang', lang);
+    i18nNodes.forEach(function (n) { n[0].innerHTML = lang === 'de' ? I18N[n[1]] : n[1]; });
+    try { localStorage.setItem('vk-lang', lang); } catch (e) {}
+    themeUi(); if (typeof tickClock === 'function') tickClock();
+    if (!quiet) toast(lang === 'de' ? 'Deutsch' : 'English');
+  }
+  $('langBtn').addEventListener('click', function () { setLang(lang === 'de' ? 'en' : 'de'); });
+  root.setAttribute('lang', 'en');
+  collectI18n();
+  try { if (localStorage.getItem('vk-lang') === 'de') setLang('de', true); } catch (e) {}
+  themeUi();
+
+  /* scroll progress + active section */
+  var bar = $('progress'), ticking = false;
+  function onScroll() {
+    if (ticking) return; ticking = true;
+    requestAnimationFrame(function () { var h = document.documentElement.scrollHeight - innerHeight; bar.style.transform = 'scaleX(' + (h > 0 ? Math.min(1, scrollY / h) : 0) + ')'; ticking = false; });
+  }
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+  var navLinks = {}; document.querySelectorAll('.nav ul a').forEach(function (a) { navLinks[a.getAttribute('href').slice(1)] = a; });
+  if ('IntersectionObserver' in window) {
+    var spy = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting && navLinks[e.target.id]) { Object.keys(navLinks).forEach(function (k) { navLinks[k].removeAttribute('aria-current'); }); navLinks[e.target.id].setAttribute('aria-current', 'true'); } });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    ['brands', 'playbook', 'experience', 'builds', 'contact'].forEach(function (id) { var el = $(id); if (el) spy.observe(el); });
+
+    /* count-up, once, when the strip comes into view */
+    var counted = false;
+    var cio = new IntersectionObserver(function (es) {
+      if (counted || !es[0].isIntersecting || reduce) return; counted = true;
+      document.querySelectorAll('[data-n]').forEach(function (el) {
+        var n = +el.dataset.n, t0 = performance.now(), dur = 900 + Math.min(n, 850) / 2;
+        (function step(t) { var k = Math.min(1, (t - t0) / dur), e = 1 - Math.pow(1 - k, 3); el.textContent = Math.round(n * e); if (k < 1) requestAnimationFrame(step); })(t0);
+      });
+    }, { threshold: .6 });
+    cio.observe(document.querySelector('.proof'));
+  }
+
+  /* brand filter */
+  function setFilter(eu) { $('roster').classList.toggle('eu-only', eu); $('fEu').setAttribute('aria-pressed', eu); $('fAll').setAttribute('aria-pressed', !eu); }
+  $('fAll').addEventListener('click', function () { setFilter(false); });
+  $('fEu').addEventListener('click', function () { setFilter(true); });
+
+  /* campaign calculator */
+  var eur = new Intl.NumberFormat('en-GB', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 });
+  var eur2 = new Intl.NumberFormat('en-GB', { style: 'currency', currency: 'EUR', minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  function compact(n) { return n >= 1e6 ? (n / 1e6).toFixed(n >= 1e7 ? 0 : 1) + 'M' : n >= 1e4 ? Math.round(n / 1e3) + 'K' : Math.round(n).toLocaleString('en-GB'); }
+  function calc() {
+    var B = +$('cBudget').value, C = +$('cCreators').value, R = +$('cReach').value, E = +$('cEr').value / 100;
+    $('oBudget').textContent = eur.format(B); $('oCreators').textContent = C; $('oReach').textContent = compact(R); $('oEr').textContent = (E * 100).toFixed(1) + '%';
+    var reach = C * R, eng = reach * E, cpm = B / reach * 1000, cpe = B / eng, per = B / C;
+    $('rReach').textContent = compact(reach); $('rEng').textContent = compact(eng);
+    $('rCpm').textContent = eur2.format(cpm); $('rCpe').textContent = eur2.format(cpe); $('rPer').textContent = eur.format(per);
+    $('rVerdict').textContent = per < 250 ? 'Spread thin' : cpm > 60 ? 'Pricey reach' : cpe < 0.4 ? 'Efficient' : 'Workable';
+  }
+  ['cBudget', 'cCreators', 'cReach', 'cEr'].forEach(function (id) { $(id).addEventListener('input', calc); });
+  calc();
+
+  /* pipeline step highlight */
+  var flow = document.querySelectorAll('.flow span'), fi = 0;
+  if (flow.length && !reduce) setInterval(function () { flow.forEach(function (s, i) { s.classList.toggle('on', i === fi); }); fi = (fi + 1) % (flow.length + 1); }, 900);
+
+  /* 3D globe: 850 dots, one per creator deal.
+     Drag to spin · scroll or pinch to zoom · click to burst and reveal the brands. */
+  var cv = $('deals'), ctx = cv.getContext('2d'), cap = $('dealCap'), capDefault = cap.textContent, hint = $('globeHint');
+  var N = 850, pts = [], jitter = [], W = 0, H = 0, R = 100, rotY = 0.6, rotX = -0.35, velY = reduce ? 0 : 0.0032;
+  var zoom = 1, zoomTo = 1, burst = 1, burstStart = 0, labels = 0, labelsTo = 0, drag = null, pinch = null, pointers = {}, proj = [];
+  var golden = Math.PI * (3 - Math.sqrt(5));
+  for (var i = 0; i < N; i++) {
+    var y = 1 - (i / (N - 1)) * 2, rad = Math.sqrt(1 - y * y), th = golden * i;
+    pts.push([Math.cos(th) * rad, y, Math.sin(th) * rad]); jitter.push(0.6 + Math.random() * 0.9);
+  }
+  var BRANDS = { 17: 'HUL', 102: 'Philips', 233: "L'Oréal", 341: 'Lakmé', 418: 'Tata', 509: 'Bumble', 622: 'Vans', 707: 'Raymond', 788: 'Universal Pictures' };
+  function layout() {
+    var r = cv.getBoundingClientRect(), dpr = Math.min(devicePixelRatio || 1, 2);
+    W = r.width; H = r.height; if (!W || !H) return;
+    cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr); ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    R = Math.min(W, H) * 0.36; draw();
+  }
+  function ease(t) { return 1 - Math.pow(1 - t, 3); }
+  function draw() {
+    var ink = tok('--teal-ink'), sig = tok('--signal'), teal = tok('--teal');
+    ctx.clearRect(0, 0, W, H);
+    var cy = Math.cos(rotY), sy = Math.sin(rotY), cx = Math.cos(rotX), sx = Math.sin(rotX), cxW = W / 2, cyH = H / 2;
+    var Rz = R * zoom, base = Math.max(1.1, Rz / 100), b = burst < 1 ? Math.sin(Math.PI * burst) : 0;
+    proj = [];
+    for (var i = 0; i < N; i++) {
+      var p = pts[i], spread = 1 + b * 0.55 * jitter[i];
+      var x = p[0] * cy + p[2] * sy, z = -p[0] * sy + p[2] * cy, y = p[1] * cx - z * sx; z = p[1] * sx + z * cx;
+      var persp = 2.6 / (2.6 - z * spread), px = cxW + x * Rz * spread * persp, py = cyH + y * Rz * spread * persp;
+      proj.push([px, py, z, i]);
+    }
+    proj.sort(function (a, c) { return a[2] - c[2]; });
+    var glow = ctx.createRadialGradient(cxW, cyH, Rz * 0.2, cxW, cyH, Rz * 1.25);
+    glow.addColorStop(0, 'rgba(255,255,255,0.07)'); glow.addColorStop(1, 'rgba(255,255,255,0)');
+    ctx.fillStyle = glow; ctx.beginPath(); ctx.arc(cxW, cyH, Rz * 1.25, 0, Math.PI * 2); ctx.fill();
+    for (var k = 0; k < proj.length; k++) {
+      var q = proj[k], depth = (q[2] + 1) / 2, brand = BRANDS[q[3]];
+      ctx.globalAlpha = (0.1 + 0.8 * depth) * (brand ? 1 : 1 - 0.35 * labels);
+      ctx.fillStyle = brand ? sig : ink;
+      ctx.beginPath(); ctx.arc(q[0], q[1], base * (0.5 + 0.75 * depth) * (brand ? 1.7 + 1.3 * labels : 1), 0, Math.PI * 2); ctx.fill();
+    }
+    if (labels > 0.01) {
+      ctx.font = '600 ' + Math.round(Math.max(11, Math.min(14, R / 13))) + 'px "Public Sans", Arial, sans-serif';
+      ctx.textBaseline = 'middle';
+      proj.forEach(function (q) {
+        var name = BRANDS[q[3]]; if (!name) return;
+        var depth = (q[2] + 1) / 2, a = labels * (0.15 + 0.85 * depth); if (a < 0.05) return;
+        var w = ctx.measureText(name).width + 16, h = 24, lx = q[0] + 10, ly = q[1] - h - 4;
+        if (lx + w > W - 8) lx = q[0] - 10 - w; if (lx < 8) lx = 8; if (ly < 8) ly = q[1] + 6;
+        ctx.globalAlpha = a;
+        ctx.strokeStyle = sig; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(q[0], q[1]); ctx.lineTo(lx < q[0] ? lx + w - 4 : lx + 4, ly + h / 2); ctx.stroke();
+        ctx.fillStyle = sig; ctx.beginPath(); if (ctx.roundRect) ctx.roundRect(lx, ly, w, h, 12); else ctx.rect(lx, ly, w, h); ctx.fill();
+        ctx.fillStyle = teal; ctx.fillText(name, lx + 8, ly + h / 2 + 0.5);
+      });
+    }
+    ctx.globalAlpha = 1;
+  }
+  function step(now) {
+    if (!drag && !pinch) rotY += velY * (labels > 0.5 ? 0.4 : 1);
+    zoom += (zoomTo - zoom) * 0.12;
+    labels += (labelsTo - labels) * 0.09;
+    if (burst < 1) burst = Math.min(1, (now - burstStart) / 900);
+    draw(); requestAnimationFrame(step);
+  }
+  function settle() { if (reduce) { zoom = zoomTo; labels = labelsTo; burst = 1; draw(); } }
+  function hideHint() { if (hint) hint.classList.add('gone'); }
+  function toggleBrands() {
+    labelsTo = labelsTo ? 0 : 1; hideHint();
+    if (!reduce) { burst = 0; burstStart = performance.now(); }
+    zoomTo = labelsTo ? Math.max(zoomTo, 1.15) : 1;
+    cap.textContent = labelsTo ? '9 global brands · click again to hide' : capDefault;
+    settle();
+  }
+  cv.addEventListener('pointerdown', function (e) {
+    pointers[e.pointerId] = [e.clientX, e.clientY];
+    var ids = Object.keys(pointers);
+    if (ids.length === 2) { var a = pointers[ids[0]], c = pointers[ids[1]]; pinch = { d: Math.hypot(a[0] - c[0], a[1] - c[1]), z: zoomTo }; drag = null; return; }
+    drag = { x: e.clientX, y: e.clientY, ry: rotY, rx: rotX, moved: false };
+    try { cv.setPointerCapture(e.pointerId); } catch (_) {}
+  });
+  cv.addEventListener('pointermove', function (e) {
+    if (pointers[e.pointerId]) pointers[e.pointerId] = [e.clientX, e.clientY];
+    if (pinch) { var ids = Object.keys(pointers); if (ids.length === 2) { var a = pointers[ids[0]], c = pointers[ids[1]]; zoomTo = Math.max(0.6, Math.min(1.6, pinch.z * Math.hypot(a[0] - c[0], a[1] - c[1]) / pinch.d)); settle(); } return; }
+    if (!drag) return;
+    var dx = e.clientX - drag.x, dy = e.clientY - drag.y;
+    if (Math.abs(dx) + Math.abs(dy) > 5) { drag.moved = true; hideHint(); }
+    rotY = drag.ry + dx * 0.008; rotX = Math.max(-1.2, Math.min(1.2, drag.rx + dy * 0.006)); if (reduce) draw();
+  });
+  function up(e) {
+    delete pointers[e.pointerId];
+    if (pinch) { if (Object.keys(pointers).length < 2) pinch = null; return; }
+    if (drag && !drag.moved && e.type === 'pointerup') toggleBrands();
+    drag = null;
+  }
+  cv.addEventListener('pointerup', up); cv.addEventListener('pointercancel', up);
+  cv.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleBrands(); } if (e.key === '+' || e.key === '=') { zoomTo = Math.min(1.6, zoomTo + 0.15); settle(); } if (e.key === '-') { zoomTo = Math.max(0.6, zoomTo - 0.15); settle(); } });
+  // Scroll over the globe zooms it; at the limits the page scrolls normally.
+  cv.addEventListener('wheel', function (e) {
+    var next = Math.max(0.6, Math.min(1.6, zoomTo * Math.exp(-e.deltaY * 0.0015)));
+    if (Math.abs(next - zoomTo) < 0.002) return;
+    e.preventDefault(); zoomTo = next; hideHint(); settle();
+  }, { passive: false });
+  layout(); addEventListener('resize', layout);
+  if (!reduce) requestAnimationFrame(step);
+  try { new MutationObserver(function () { draw(); }).observe(root, { attributes: true, attributeFilter: ['data-theme'] }); } catch (e) {}
+
+  /* live layer: local time, magnetic buttons, cursor spotlight, timeline progress */
+  var clockEl = $('localTime');
+  function tickClock() {
+    clockEl = $('localTime'); if (!clockEl) return;
+    try { clockEl.textContent = new Intl.DateTimeFormat('en-GB', { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Berlin' }).format(new Date()); } catch (_) {}
+  }
+  tickClock(); setInterval(tickClock, 20000);
+  var fine = matchMedia('(hover: hover) and (pointer: fine)').matches;
+  if (fine && !reduce) {
+    document.querySelectorAll('.btn.primary, .magnet').forEach(function (b) {
+      b.addEventListener('pointermove', function (e) { var r = b.getBoundingClientRect(); b.style.transform = 'translate(' + ((e.clientX - r.left - r.width / 2) * 0.18).toFixed(1) + 'px,' + ((e.clientY - r.top - r.height / 2) * 0.25).toFixed(1) + 'px)'; });
+      b.addEventListener('pointerleave', function () { b.style.transform = ''; });
+    });
+  }
+  if (fine) {
+    document.addEventListener('pointermove', function (e) {
+      var el = e.target.closest && e.target.closest('.spot'); if (!el) return;
+      var r = el.getBoundingClientRect(); el.style.setProperty('--mx', (e.clientX - r.left) + 'px'); el.style.setProperty('--my', (e.clientY - r.top) + 'px');
+    }, { passive: true });
+  }
+  var tl = document.querySelector('.timeline');
+  function tlProgress() {
+    if (!tl) return; var r = tl.getBoundingClientRect(), vh = innerHeight;
+    var p = Math.min(1, Math.max(0, (vh * 0.65 - r.top) / r.height)); tl.style.setProperty('--tp', p.toFixed(3));
+  }
+  addEventListener('scroll', tlProgress, { passive: true }); tlProgress();
+
+  /* pinned word reel: one discipline lights up per scroll step */
+  var reel = $('reel'), words = reel ? reel.querySelectorAll('.words li') : [];
+  function reelStep() {
+    if (!reel || reduce) return;
+    var r = reel.getBoundingClientRect(), total = reel.offsetHeight - innerHeight;
+    var prog = total > 0 ? Math.min(0.999, Math.max(0, -r.top / total)) : 0;
+    var idx = Math.floor(prog * words.length);
+    words.forEach(function (w, k) { w.classList.toggle('on', k === idx); });
+  }
+  if (words.length) { words[0].classList.add('on'); addEventListener('scroll', reelStep, { passive: true }); reelStep(); }
+
+  /* 3D tilt on cards (mouse and trackpad only) */
+  if (!reduce && matchMedia('(hover: hover) and (pointer: fine)').matches) {
+    document.querySelectorAll('.tilt').forEach(function (el) {
+      el.addEventListener('pointermove', function (e) {
+        var b = el.getBoundingClientRect(), px = (e.clientX - b.left) / b.width - 0.5, py = (e.clientY - b.top) / b.height - 0.5;
+        el.style.transform = 'perspective(900px) rotateX(' + (-py * 5).toFixed(2) + 'deg) rotateY(' + (px * 6).toFixed(2) + 'deg) translateZ(4px)';
+        el.classList.add('lift');
+      });
+      el.addEventListener('pointerleave', function () { el.style.transform = ''; el.classList.remove('lift'); });
+    });
+  }
+
+  /* project filter chips */
+  var chips = document.querySelectorAll('.chips button'), cards = document.querySelectorAll('#buildGrid .build');
+  chips.forEach(function (c) {
+    c.addEventListener('click', function () {
+      var f = c.dataset.f;
+      chips.forEach(function (x) { x.setAttribute('aria-pressed', x === c); });
+      cards.forEach(function (card) { card.hidden = !(f === 'all' || (' ' + card.dataset.tags + ' ').indexOf(' ' + f + ' ') > -1); });
+    });
+  });
+
+  /* CV viewer: tabs on phones, zoom lightbox everywhere */
+  var cvPages = $('cvPages'), lb = $('lightbox'), lbImg = $('lbImg'), lbLast = null;
+  function cvShow(n) { cvPages.dataset.show = n; $('cvTab1').setAttribute('aria-selected', n === 1); $('cvTab2').setAttribute('aria-selected', n === 2); }
+  if (cvPages) {
+    cvShow(1);
+    $('cvTab1').addEventListener('click', function () { cvShow(1); });
+    $('cvTab2').addEventListener('click', function () { cvShow(2); });
+    cvPages.querySelectorAll('.cvpage').forEach(function (f) {
+      f.tabIndex = 0;
+      function openLb() { lbLast = f; lbImg.src = f.querySelector('img').src; lbImg.alt = f.querySelector('img').alt; lb.hidden = false; $('lbClose').focus(); }
+      f.addEventListener('click', openLb);
+      f.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openLb(); } });
+    });
+    function closeLb() { lb.hidden = true; if (lbLast) lbLast.focus(); }
+    lb.addEventListener('click', function (e) { if (e.target !== lbImg) closeLb(); });
+    $('lbClose').addEventListener('click', closeLb);
+    addEventListener('keydown', function (e) { if (e.key === 'Escape' && !lb.hidden) closeLb(); });
+  }
+
+  /* command palette */
+  var actions = [
+    ['Brands I have worked with', 'brands'], ['How I run a creator program', 'playbook'], ['Campaign calculator', 'calcH'], ['What I\'m hired for', 'work'], ['Things I\'ve built', 'builds'],
+    ['Experience', 'experience'], ['Working in Germany', 'europe'], ['Education and languages', 'education'], ['Contact', 'contact'],
+    ['Copy email address', function () { copyEmail(); }, 'action'], ['Open LinkedIn profile', 'https://www.linkedin.com/in/vishwajeetkumbhar379', 'link'], ['Open GitHub profile', 'https://github.com/Vishwajeetkumbhar379', 'link'],
+    ['Switch day or night mode', toggleTheme, 'action'], ['My CV', 'cv'], ['Download CV (PDF)', '/Vishwajeet_Kumbhar_CV.pdf', 'link'], ['Deutsch / English', function () { setLang(lang === 'de' ? 'en' : 'de'); }, 'action']
+  ];
+  var back = $('palBack'), input = $('palIn'), list = $('palList'), shown = [], sel = 0, lastFocus = null;
+  function render() {
+    var q = input.value.trim().toLowerCase();
+    shown = actions.filter(function (a) { return !q || a[0].toLowerCase().indexOf(q) > -1; });
+    sel = Math.min(sel, Math.max(0, shown.length - 1));
+    list.innerHTML = '';
+    if (!shown.length) { var li = document.createElement('li'); li.textContent = 'Nothing matches "' + input.value + '"'; list.appendChild(li); return; }
+    shown.forEach(function (a, i) {
+      var li = document.createElement('li'); li.setAttribute('role', 'option'); li.setAttribute('aria-selected', i === sel);
+      li.innerHTML = '<span></span><small></small>'; li.firstChild.textContent = a[0]; li.lastChild.textContent = a[2] === 'action' ? 'action' : a[2] === 'link' ? 'opens link' : 'jump';
+      li.addEventListener('mousemove', function () { if (sel !== i) { sel = i; render(); } });
+      li.addEventListener('click', function () { run(a); });
+      list.appendChild(li);
+    });
+  }
+  function open() { lastFocus = document.activeElement; back.hidden = false; input.value = ''; sel = 0; render(); input.focus(); }
+  function close() { back.hidden = true; if (lastFocus && lastFocus.focus) lastFocus.focus(); }
+  function run(a) {
+    if (a[2] === 'link') { var l = document.createElement('a'); l.href = a[1]; l.target = '_blank'; l.rel = 'noopener'; document.body.appendChild(l); l.click(); l.remove(); close(); return; }
+    close();
+    if (typeof a[1] === 'function') { a[1](); return; }
+    var el = $(a[1]); if (el) el.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
+  }
+  $('palBtn').addEventListener('click', open);
+  back.addEventListener('click', function (e) { if (e.target === back) close(); });
+  input.addEventListener('input', function () { sel = 0; render(); });
+  input.addEventListener('keydown', function (e) {
+    if (e.key === 'ArrowDown') { e.preventDefault(); sel = (sel + 1) % Math.max(1, shown.length); render(); }
+    else if (e.key === 'ArrowUp') { e.preventDefault(); sel = (sel - 1 + shown.length) % Math.max(1, shown.length); render(); }
+    else if (e.key === 'Enter' && shown[sel]) { e.preventDefault(); run(shown[sel]); }
+  });
+  addEventListener('keydown', function (e) {
+    var typing = /INPUT|TEXTAREA/.test((e.target.tagName || '')) && e.target.type !== 'range';
+    if ((e.key === 'k' || e.key === 'K') && (e.metaKey || e.ctrlKey)) { e.preventDefault(); back.hidden ? open() : close(); }
+    else if (e.key === '/' && !typing && back.hidden) { e.preventDefault(); open(); }
+    else if (e.key === 'Escape' && !back.hidden) { close(); }
+  });
+})();
+</script>
+
+</body>
+</html>
