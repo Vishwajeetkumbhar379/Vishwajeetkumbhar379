@@ -34,6 +34,20 @@ class BuildError(Exception):
     pass
 
 
+def read(path):
+    with open(path, encoding="utf-8") as f:
+        return f.read()
+
+
+def write(path, text):
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(text)
+
+
+def load_json(path):
+    return json.loads(read(path))
+
+
 def words(text):
     return len(re.findall(r"\S+", text))
 
@@ -47,7 +61,7 @@ def esc(text):
 
 
 def load_config():
-    cfg = json.load(open(os.path.join(HERE, "config.json"), encoding="utf-8"))
+    cfg = load_json(os.path.join(HERE, "config.json"))
     handle = os.environ.get("LINKEDIN_HANDLE") or cfg["handle"]
     return {"handle": handle if handle.startswith("@") else "@" + handle}
 
@@ -109,7 +123,7 @@ def check(topic):
             break
     slop = os.path.join(HERE, "..", ".claude", "skills", "li-human", "slop.json")
     if os.path.exists(slop):
-        lex = json.load(open(slop, encoding="utf-8"))
+        lex = load_json(slop)
         for entry in lex.get("words", []) + lex.get("phrases", []):
             if re.search(r"\b" + re.escape(entry["find"]) + r"\b", blob, re.I):
                 problems.append(f"AI-sounding word: '{entry['find']}'. Try '{entry['replace'] or 'deleting it'}'.")
@@ -168,7 +182,7 @@ def render_slide(i, total, s, cfg):
 
 
 def render_html(topic, cfg, fonts_dir):
-    css = open(os.path.join(HERE, "theme.css"), encoding="utf-8").read().replace("FONTS", fonts_dir)
+    css = read(os.path.join(HERE, "theme.css")).replace("FONTS", fonts_dir)
     slides = topic["slides"]
     body = "".join(render_slide(i, len(slides), s, cfg) for i, s in enumerate(slides, 1))
     return (f'<!doctype html><html lang="en"><head><meta charset="utf-8"><title>{esc(topic["topic"])}</title>'
@@ -212,7 +226,7 @@ def main(argv=None):
     ap.add_argument("--no-pdf", action="store_true", help="only check the content and write HTML + caption")
     args = ap.parse_args(argv)
 
-    topic = json.load(open(args.topic_file, encoding="utf-8"))
+    topic = load_json(args.topic_file)
     problems = check(topic)
     if problems:
         print("Fix these first:")
@@ -225,8 +239,8 @@ def main(argv=None):
     os.makedirs(out, exist_ok=True)
     html_path = os.path.join(out, "carousel.html")
     fonts = "file://" + os.path.join(HERE, "fonts")
-    open(html_path, "w", encoding="utf-8").write(render_html(topic, cfg, fonts))
-    open(os.path.join(out, "caption.txt"), "w", encoding="utf-8").write("\n".join(topic["caption"]) + "\n")
+    write(html_path, render_html(topic, cfg, fonts))
+    write(os.path.join(out, "caption.txt"), "\n".join(topic["caption"]) + "\n")
     if not args.no_pdf:
         pdf = os.path.join(out, "carousel.pdf")
         make_pdf(html_path, pdf)

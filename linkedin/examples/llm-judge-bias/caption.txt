@@ -1,0 +1,22 @@
+Your AI ad judge has a favourite.
+It's not your best ad.
+
+Models that rank copy lean on habits:
+→ the option shown first
+→ the longer option
+→ their own writing
+→ one vague overall score
+
+The fix stack:
+→ Yes/no rubric, not one score
+→ Swap the order, run it twice
+→ A different model as judge
+→ Check it against ads with known results
+
+I'd rather spend an hour testing the judge than a month running ads it picked.
+
+Source: Zheng et al. 2023, LLM-as-a-Judge (MT-Bench).
+
+🔖 Save this for your next copy test.
+
+Which ad did your AI pick that your audience ignored?

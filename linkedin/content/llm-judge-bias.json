@@ -1,0 +1,163 @@
+{
+  "slug": "llm-judge-bias",
+  "topic": "Why an AI judge picks the wrong ad",
+  "slides": [
+    {
+      "kind": "cover",
+      "tint": "purple",
+      "badge": "AI x Marketing",
+      "title": "Your AI ad judge is *biased*",
+      "sub": "4 quiet biases that rig your copy tests, and the fix for each."
+    },
+    {
+      "kind": "stake",
+      "tint": "coral",
+      "badge": "The stake",
+      "title": "Testing the model, not the audience",
+      "body": "Ask a model which ad is better and the answer often reflects its **habits**, not your customer's behaviour. Research on LLM judges documents the pattern.",
+      "source": "Source: Zheng et al. 2023, \"Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena\""
+    },
+    {
+      "kind": "point",
+      "tint": "teal",
+      "badge": "Bias 1 of 4",
+      "title": "It favours whoever goes first",
+      "body": "Swap the order of the same two ads and the verdict can flip. That is position bias.",
+      "fix": "Judge every pair twice with the order swapped. Keep only the verdicts that survive.",
+      "demo": [
+        {
+          "k": "Ad A shown first",
+          "v": "A wins"
+        },
+        {
+          "k": "Ad B shown first",
+          "v": "B wins"
+        }
+      ]
+    },
+    {
+      "kind": "point",
+      "tint": "purple",
+      "badge": "Bias 2 of 4",
+      "title": "It loves the longer version",
+      "body": "Longer copy reads as more thorough, so the judge rewards length instead of clarity.",
+      "fix": "Match word counts before judging, and score clarity and specificity separately.",
+      "demo": [
+        {
+          "k": "Short and sharp",
+          "v": "Loses"
+        },
+        {
+          "k": "Long and padded",
+          "v": "Wins"
+        }
+      ]
+    },
+    {
+      "kind": "point",
+      "tint": "coral",
+      "badge": "Bias 3 of 4",
+      "title": "It likes its own writing",
+      "body": "A judge tends to rate text in its own style higher. If one model writes and judges, it grades itself.",
+      "fix": "Use a different model as the judge than the one that wrote the ads.",
+      "demo": [
+        {
+          "k": "Written by model X",
+          "v": "Rated higher"
+        },
+        {
+          "k": "Written by a human",
+          "v": "Rated lower"
+        }
+      ]
+    },
+    {
+      "kind": "point",
+      "tint": "teal",
+      "badge": "Bias 4 of 4",
+      "title": "One overall score hides the reason",
+      "body": "A single 1 to 10 score drifts between runs and cannot tell you why an ad won.",
+      "fix": "Replace it with 4 yes/no checks: specific hook, one claim, a real number, one call to action.",
+      "demo": [
+        {
+          "k": "Run 1, same ad",
+          "v": "7 out of 10"
+        },
+        {
+          "k": "Run 2, same ad",
+          "v": "5 out of 10"
+        }
+      ]
+    },
+    {
+      "kind": "stack",
+      "tint": "purple",
+      "badge": "The fix stack",
+      "title": "Trust the judge last",
+      "items": [
+        "Yes/no rubric, not one score",
+        "Swap the order, run it twice",
+        "A different model as judge",
+        "Check it against real past results"
+      ],
+      "body": "Take ads where you already know the click rate. If the judge cannot rank those, do not let it rank new ones."
+    },
+    {
+      "kind": "recap",
+      "tint": "teal",
+      "badge": "Save this recap",
+      "title": "The whole thing",
+      "rows": [
+        {
+          "k": "Position",
+          "v": "Swap order, run twice"
+        },
+        {
+          "k": "Length",
+          "v": "Match word counts"
+        },
+        {
+          "k": "Self-favour",
+          "v": "Use a different judge"
+        },
+        {
+          "k": "Vague score",
+          "v": "Use yes/no checks"
+        }
+      ],
+      "source": "A model that cannot rank your past winners cannot rank your next ad."
+    },
+    {
+      "kind": "cta",
+      "tint": "coral",
+      "badge": "One more thing",
+      "title": "Save this for your next copy test",
+      "sub": "More rare, high-signal AI x marketing, no generic tips.",
+      "button": "Save this post"
+    }
+  ],
+  "caption": [
+    "Your AI ad judge has a favourite.",
+    "It's not your best ad.",
+    "",
+    "Models that rank copy lean on habits:",
+    "→ the option shown first",
+    "→ the longer option",
+    "→ their own writing",
+    "→ one vague overall score",
+    "",
+    "The fix stack:",
+    "→ Yes/no rubric, not one score",
+    "→ Swap the order, run it twice",
+    "→ A different model as judge",
+    "→ Check it against ads with known results",
+    "",
+    "I'd rather spend an hour testing the judge than a month running ads it picked.",
+    "",
+    "Source: Zheng et al. 2023, LLM-as-a-Judge (MT-Bench).",
+    "",
+    "🔖 Save this for your next copy test.",
+    "",
+    "Which ad did your AI pick that your audience ignored?"
+  ]
+}
