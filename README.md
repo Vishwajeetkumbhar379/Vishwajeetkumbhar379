@@ -44,6 +44,6 @@ Five years across creator partnerships, paid and organic social, client leadersh
 
 #### Find me
 
-[Portfolio](https://claude.ai/artifact/RshMHvjXN9JSKihHA9iNP9) · [LinkedIn](https://www.linkedin.com/in/vishwajeetkumbhar379) · vishwajeetkumbhar379@gmail.com
+[Portfolio](https://vishkumbhar.netlify.app) · [CV (PDF)](https://vishkumbhar.netlify.app/Vishwajeet_Kumbhar_CV.pdf) · [LinkedIn](https://www.linkedin.com/in/vishwajeetkumbhar379) · vishwajeetkumbhar379@gmail.com
 
 <sub>Open to growth, performance, digital marketing, partnerships and account management roles · remote first, Berlin welcome</sub>
